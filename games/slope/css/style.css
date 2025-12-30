@@ -14,7 +14,7 @@
 }
 
 .webgl-content .logo {
-  background: url('/img/logo.png') no-repeat center / contain;
+  background: url('../img/logo.png') no-repeat center / contain;
   width: 154px;
   height: 130px;
 }
