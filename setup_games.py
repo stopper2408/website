@@ -24,9 +24,9 @@ def get_game_category(title, description):
     
     categories = {
         "Puzzle": ["2048", "hextris", "tetris", "puzzle", "logic", "sudoku", "connect", "brain", "maze", "factory"],
-        "Action": ["shooter", "fps", "gun", "fight", "battle", "asteroids", "run", "jump", "platformer", "survival", "tank", "war", "glitch", "underrun", "geometry"],
+        "Action": ["shooter", "fps", "gun", "fight", "battle", "asteroids", "run", "jump", "platformer", "survival", "tank", "war", "glitch", "underrun", "geometry", "slope", "tunnel"],
         "Strategy": ["tower", "defense", "strategy", "civilization", "empire", "kingdom", "idle", "clicker", "manage", "trimps", "sim"],
-        "Sports": ["soccer", "football", "basketball", "tennis", "golf", "sport", "race", "racing", "drift"],
+        "Sports": ["soccer", "football", "basketball", "tennis", "golf", "sport", "race", "racing", "drift", "surf"],
         "Arcade": ["arcade", "retro", "classic", "pacman", "snake", "breakout", "space", "invaders", "dino"]
     }
     
@@ -125,6 +125,56 @@ def get_game_metadata(game_dir):
             
     return title, description, image
 
+def download_repo_as_game(repo_url, game_id, target_dir, branch="main"):
+    print(f"Downloading {game_id} from {repo_url}...")
+    zip_url = f"{repo_url}/archive/refs/heads/{branch}.zip"
+    
+    try:
+        r = requests.get(zip_url)
+        if r.status_code != 200:
+            # Try master if main fails
+            zip_url = f"{repo_url}/archive/refs/heads/master.zip"
+            r = requests.get(zip_url)
+            
+        if r.status_code == 200:
+            z = zipfile.ZipFile(io.BytesIO(r.content))
+            extract_path = f"temp_{game_id}"
+            z.extractall(extract_path)
+            
+            # Find the root folder (usually repo-branch)
+            root_folder = os.listdir(extract_path)[0]
+            source_path = os.path.join(extract_path, root_folder)
+            
+            target_game_path = os.path.join(target_dir, game_id)
+            if os.path.exists(target_game_path):
+                shutil.rmtree(target_game_path)
+            
+            shutil.copytree(source_path, target_game_path)
+            shutil.rmtree(extract_path)
+            
+            # Get metadata
+            extracted_title, extracted_desc, extracted_image = get_game_metadata(target_game_path)
+            
+            title = extracted_title if extracted_title else game_id.replace("-", " ").title()
+            description = extracted_desc if extracted_desc else f"Play {title} now!"
+            image = extracted_image if extracted_image else "https://placehold.co/300x200/1e293b/3b82f6?text=" + game_id
+            category = get_game_category(title, description)
+            
+            return {
+                "id": game_id,
+                "title": title,
+                "image": image,
+                "url": f"games/{game_id}/index.html",
+                "description": description,
+                "category": category
+            }
+        else:
+            print(f"Failed to download {game_id}: Status {r.status_code}")
+            return None
+    except Exception as e:
+        print(f"Error downloading {game_id}: {e}")
+        return None
+
 def setup_games(source_dir, target_dir):
     html5_source = os.path.join(source_dir, "gfiles", "html5")
     
@@ -208,6 +258,18 @@ def setup_games(source_dir, target_dir):
                     "description": description,
                     "category": category
                 })
+    
+    # Download extra games
+    extra_games = [
+        ("https://github.com/mcalec-dev/slope-game", "slope"),
+        ("https://github.com/gameshaxor/SubwaySurfers", "subway-surfers")
+    ]
+    
+    for repo, gid in extra_games:
+        game_data = download_repo_as_game(repo, gid, target_dir)
+        if game_data:
+            games_list.append(game_data)
+            print(f"Added extra game: {gid}")
     
     return games_list
 

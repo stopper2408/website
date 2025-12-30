@@ -238,5 +238,21 @@
     "url": "games/underrun/index.html",
     "description": "Play UNDERRUN now!",
     "category": "Action"
+  },
+  {
+    "id": "slope",
+    "title": "Slope Game",
+    "image": "games/slope/img/logo.png",
+    "url": "games/slope/index.html",
+    "description": "Play Slope Game now!",
+    "category": "Action"
+  },
+  {
+    "id": "subway-surfers",
+    "title": "Subway Surfers | Play Free HTML5 Games",
+    "image": "games/subway-surfers/favicon.ico",
+    "url": "games/subway-surfers/index.html",
+    "description": "Subway Surfers adalah permainan mobile populer yang menantang pemain untuk berlari secepat mungkin di atas rel kereta bawah tanah sambil menghindari rintangan dan mengumpulkan koin. Dengan grafis yang cerah dan aksi cepat, game ini telah menjadi favorit di kalangan pengguna ponsel di seluruh dunia.",
+    "category": "Action"
   }
 ]
