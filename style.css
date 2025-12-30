@@ -196,16 +196,17 @@ nav a:hover, nav a.active {
     overflow: hidden;
     text-decoration: none;
     color: var(--text-primary);
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     border: 1px solid var(--glass-border);
     position: relative;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    backface-visibility: hidden; /* Prevents flickering in some browsers */
 }
 
 .game-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-5px);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     border-color: var(--accent-primary);
 }

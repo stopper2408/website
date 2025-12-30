@@ -63,7 +63,7 @@ function renderGames(games) {
         
         card.innerHTML = `
             <a href="game.html?id=${game.id}" style="text-decoration: none; color: inherit; display: block;">
-                <img src="${game.image}" alt="${game.title}" loading="lazy" onerror="this.src='https://placehold.co/300x200/1e293b/3b82f6?text=${encodeURIComponent(game.title)}'">
+                <img src="${game.image}" alt="${game.title}" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/300x200/1e293b/3b82f6?text=${encodeURIComponent(game.title)}'">
                 <div class="game-info">
                     <h3>${game.title}</h3>
                     <p>${game.description}</p>
