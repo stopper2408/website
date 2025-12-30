@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Game | Nexus Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    
+    <header class="glass-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span>Nexus<span class="highlight">Games</span></span>
+                </a>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index.html#new">New</a>
+                <a href="index.html#popular">Popular</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding-top: 40px;">
+        <div id="game-details">
+            <div class="game-header">
+                <div>
+                    <h1 id="game-title" style="margin-bottom: 5px;">Loading...</h1>
+                    <p id="game-category" style="color: var(--text-secondary); font-size: 0.9rem;">Arcade</p>
+                </div>
+                <button class="fullscreen-btn" onclick="toggleFullscreen()">
+                    <i class="fa-solid fa-expand"></i> Fullscreen
+                </button>
+            </div>
+
+            <div class="game-frame-wrapper" id="game-container">
+                <iframe id="game-frame" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="game-info-card" style="background: var(--bg-card); padding: 25px; border-radius: 16px; border: 1px solid var(--glass-border);">
+                <h3 style="margin-bottom: 15px;">Description</h3>
+                <p id="game-description" style="color: var(--text-secondary);">Loading description...</p>
+            </div>
+        </div>
+
+        <div id="error-message" style="display: none; text-align: center; padding: 100px 0;">
+            <i class="fa-solid fa-ghost" style="font-size: 4rem; color: var(--text-secondary); margin-bottom: 20px;"></i>
+            <h2>Game not found</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 20px;">Sorry, the game you are looking for does not exist or has been removed.</p>
+            <a href="index.html" class="play-btn" style="display: inline-block; width: auto; padding: 10px 30px;">Go Back Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Nexus Games. Open Source & Unblocked.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Specific logic for game.html
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const gameId = urlParams.get('id');
+            
+            if (gameId) {
+                loadGame(gameId);
+            } else {
+                document.getElementById('game-details').style.display = 'none';
+                document.getElementById('error-message').style.display = 'block';
+            }
+        });
+
+        function toggleFullscreen() {
+            const elem = document.getElementById("game-frame");
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) { /* Safari */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE11 */
+                elem.msRequestFullscreen();
+            }
+        }
+    </script>
+</body>
+</html>

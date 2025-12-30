@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unblocked Games | Play Anywhere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    
+    <header class="glass-header">
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>Nexus<span class="highlight">Games</span></span>
+            </div>
+            <nav>
+                <a href="index.html" class="active">Home</a>
+                <a href="#new">New</a>
+                <a href="#popular">Popular</a>
+                <a href="#" onclick="alert('Host this on GitHub Pages to share!')"><i class="fa-brands fa-github"></i> GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Play Without <span class="gradient-text">Limits</span></h1>
+                <p>The ultimate collection of unblocked games for school, work, or home.</p>
+                
+                <div class="search-container">
+                    <i class="fa-solid fa-search search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Search for games (e.g. Cookie Clicker)...">
+                </div>
+            </div>
+        </section>
+
+        <section class="categories container">
+            <button class="category-pill active" data-cat="all">All</button>
+            <button class="category-pill" data-cat="action">Action</button>
+            <button class="category-pill" data-cat="arcade">Arcade</button>
+            <button class="category-pill" data-cat="puzzle">Puzzle</button>
+            <button class="category-pill" data-cat="sports">Sports</button>
+        </section>
+
+        <section class="container">
+            <div id="games-grid" class="games-grid">
+                <!-- Games will be loaded here by script.js -->
+                <div class="loading-spinner">
+                    <i class="fa-solid fa-circle-notch fa-spin"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Nexus Games. Open Source & Unblocked.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
