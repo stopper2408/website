@@ -368,3 +368,19 @@ footer {
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     }
 }
+
+/* Typing Animation Cursor */
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: var(--accent-primary);
+    animation: blink 1s infinite;
+    margin-left: 5px;
+    vertical-align: middle;
+    height: 1em;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
