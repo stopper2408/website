@@ -37,6 +37,17 @@ async function fetchGames() {
     try {
         const response = await fetch('games.json');
         allGames = await response.json();
+        
+        // Sort by popularity (descending), then title (ascending)
+        allGames.sort((a, b) => {
+            const popA = a.popularity || 0;
+            const popB = b.popularity || 0;
+            if (popA !== popB) {
+                return popB - popA; // Higher popularity first
+            }
+            return a.title.localeCompare(b.title);
+        });
+
         renderGames(allGames);
     } catch (error) {
         console.error('Error fetching content:', error);

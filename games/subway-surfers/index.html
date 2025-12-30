@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        // Block external redirects and popups
+        window.open = function(url, target, features) {
+            console.log("Blocked window.open to: " + url);
+            return null;
+        };
+        
+        // Attempt to block location changes
+        // This is a best-effort attempt as location is read-only/non-configurable in many contexts
+        try {
+            Object.defineProperty(window, 'location', {
+                configurable: true,
+                get: function() { return document.location; },
+                set: function(val) { console.log("Blocked location set to: " + val); }
+            });
+        } catch(e) {
+            console.log("Could not override window.location");
+        }
+    </script>
     <meta charset="UTF-8">
     <script src="patch/js/poki-sdk.js"></script>
     <meta http-equiv="content-type" content="text/html; charset=UTF8">
