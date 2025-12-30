@@ -3,14 +3,14 @@
     "id": "hextris",
     "title": "Hexagonal Geometry",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Hextris",
-    "url": "games/hextris/index.html",
+    "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/hextris/index.html",
     "description": "An interactive study of hexagonal spatial reasoning."
   },
   {
     "id": "cookie-clicker",
     "title": "Bakery Economics",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Cookie+Clicker",
-    "url": "games/cookieclicker/index.html",
+    "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/cookieclicker/index.html",
     "description": "A simulation of exponential growth in a bakery environment."
   },
   {
@@ -56,87 +56,87 @@
     "description": "Microscopic cellular growth and consumption simulation."
   },
   {
-    "id": "fnf-3d",
-    "title": "Rhythm Analysis 3D",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=FNF+3D",
-    "url": "https://example.com/embed/fnf-3d",
-    "description": "A 3D interactive study of rhythm and timing."
+    "id": "fnf",
+    "title": "Rhythm Analysis",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=FNF",
+    "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/fridaynightfunkin/index.html",
+    "description": "A study of rhythm and timing."
   },
   {
     "id": "clash",
     "title": "Strategic Conflict",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Clash+Royale",
-    "url": "https://example.com/embed/clash",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Clash+of+Clans",
+    "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/clash-of-clans/index.html",
     "description": "A simulation of strategic resource management and defense."
   },
   {
-    "id": "survival-race",
-    "title": "Endurance Physics",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Survival+Race",
-    "url": "https://example.com/embed/survival-race",
-    "description": "A study of velocity and obstacle avoidance."
+    "id": "drift-hunters",
+    "title": "Friction Physics",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Drift+Hunters",
+    "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/drift-hunters/index.html",
+    "description": "An interactive demonstration of tire friction and momentum."
   },
   {
-    "id": "rocketgoal-io",
+    "id": "rocket-soccer",
     "title": "Rocket Physics",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Rocket+League",
-    "url": "https://example.com/embed/rocketgoal-io",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Rocket+Soccer",
+    "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/rocket-soccer-derby/index.html",
     "description": "Interactive physics demonstration with rockets."
   },
   {
-    "id": "slither-io-2",
+    "id": "slither-io",
     "title": "Growth Dynamics",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Slither.io",
-    "url": "https://example.com/embed/slither-io-2",
+    "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/slitherio/index.html",
     "description": "A simulation of competitive growth dynamics."
   },
   {
-    "id": "gta-simulator",
+    "id": "grand-town",
     "title": "Urban Simulation",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=GTA",
-    "url": "https://example.com/embed/gta-simulator",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Grand+Town",
+    "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/grand-town-auto/index.html",
     "description": "An open-world urban environment simulation."
   },
   {
-    "id": "1-12-2-online",
+    "id": "minecraft-classic",
     "title": "Voxel Architecture",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Minecraft",
-    "url": "https://example.com/embed/minecraft-1-12-2",
+    "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/minecraft-classic/index.html",
     "description": "A creative voxel-based architectural tool."
   },
   {
     "id": "snow-rider",
     "title": "Alpine Physics",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Snow+Rider",
-    "url": "https://example.com/embed/snow-rider",
+    "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/snow-rider-3d/index.html",
     "description": "A 3D simulation of alpine descent physics."
   },
   {
     "id": "football-bros",
     "title": "Team Dynamics",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Football+Bros",
-    "url": "https://example.com/embed/football-bros",
+    "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/football-bros/index.html",
     "description": "A simulation of cooperative team sports dynamics."
   },
   {
     "id": "retro-bowl",
     "title": "Vintage Strategy",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Retro+Bowl",
-    "url": "https://example.com/embed/retro-bowl",
+    "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/retro-bowl/index.html",
     "description": "A strategic management simulation."
   },
   {
     "id": "basket-random",
     "title": "Physics Randomness",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Basket+Random",
-    "url": "https://example.com/embed/basket-random",
+    "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/basket-random/index.html",
     "description": "A study of random physics interactions."
   },
   {
     "id": "gunspin",
     "title": "Recoil Physics",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Gunspin",
-    "url": "https://example.com/embed/gunspin",
+    "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/gunspin/index.html",
     "description": "An interactive demonstration of recoil mechanics."
   }
 ]
