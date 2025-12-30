@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
     const categoryPills = document.querySelectorAll('.category-pill');
 
+    initTypingAnimation();
+
     if (gamesGrid) {
         fetchGames();
         
@@ -151,4 +153,46 @@ async function loadGame(gameId) {
     } catch (error) {
         console.error('Error loading details:', error);
     }
+}
+
+function initTypingAnimation() {
+    const textElement = document.getElementById('dynamic-text');
+    if (!textElement) return;
+
+    const words = ["History", "Science", "Nature", "Culture", "The World"];
+    let wordIndex = 0;
+    let charIndex = words[0].length;
+    let isDeleting = true; // Start by deleting "History" after a pause
+    
+    // Initial delay before starting to delete
+    setTimeout(() => {
+        type();
+    }, 2000);
+
+    function type() {
+        const currentWord = words[wordIndex];
+        let typeSpeed = 200;
+        
+        if (isDeleting) {
+            textElement.textContent = currentWord.substring(0, charIndex - 1);
+            charIndex--;
+            typeSpeed = 100;
+        } else {
+            textElement.textContent = currentWord.substring(0, charIndex + 1);
+            charIndex++;
+            typeSpeed = 200;
+        }
+
+        if (!isDeleting && charIndex === currentWord.length) {
+            isDeleting = true;
+            typeSpeed = 2000; // Pause at end of word
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+            typeSpeed = 500; // Pause before typing new word
+        }
+
+        setTimeout(type, typeSpeed);
+    }
+}
 }
