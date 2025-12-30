@@ -1,100 +1,100 @@
 [
   {
     "id": "hextris",
-    "title": "Hextris",
-    "image": "https://placehold.co/300x200?text=Hextris",
+    "title": "Hexagonal Geometry",
+    "image": "https://placehold.co/300x200?text=Geometry+Study",
     "url": "games/hextris/index.html",
-    "description": "An addictive puzzle game inspired by Tetris."
+    "description": "An interactive study of hexagonal spatial reasoning."
   },
   {
     "id": "cookie-clicker",
-    "title": "Cookie Clicker",
-    "image": "https://placehold.co/300x200?text=Cookie+Clicker",
+    "title": "Bakery Economics",
+    "image": "https://placehold.co/300x200?text=Economics+Sim",
     "url": "games/cookieclicker/index.html",
-    "description": "The original idle game where you bake cookies."
+    "description": "A simulation of exponential growth in a bakery environment."
   },
   {
     "id": "fnf-3d",
-    "title": "FNF 3D",
-    "image": "https://placehold.co/300x200?text=FNF+3D",
+    "title": "Rhythm Analysis 3D",
+    "image": "https://placehold.co/300x200?text=Rhythm+Study",
     "url": "https://example.com/embed/fnf-3d",
-    "description": "Five Nights at Freddy's 3D Unblocked game."
+    "description": "A 3D interactive study of rhythm and timing."
   },
   {
     "id": "clash",
-    "title": "Clash",
-    "image": "https://placehold.co/300x200?text=Clash",
+    "title": "Strategic Conflict",
+    "image": "https://placehold.co/300x200?text=Strategy+Sim",
     "url": "https://example.com/embed/clash",
-    "description": "Clash unblocked game."
+    "description": "A simulation of strategic resource management and defense."
   },
   {
     "id": "survival-race",
-    "title": "Survival Race",
-    "image": "https://placehold.co/300x200?text=Survival+Race",
+    "title": "Endurance Physics",
+    "image": "https://placehold.co/300x200?text=Physics+Sim",
     "url": "https://example.com/embed/survival-race",
-    "description": "Adrenaline-pumping Survival Race."
+    "description": "A study of velocity and obstacle avoidance."
   },
   {
     "id": "rocketgoal-io",
-    "title": "RocketGoal.io",
-    "image": "https://placehold.co/300x200?text=RocketGoal.io",
+    "title": "Rocket Physics",
+    "image": "https://placehold.co/300x200?text=Rocket+Physics",
     "url": "https://example.com/embed/rocketgoal-io",
-    "description": "RocketGoal.io unblocked."
+    "description": "Interactive physics demonstration with rockets."
   },
   {
     "id": "slither-io-2",
-    "title": "Slither.io 2",
-    "image": "https://placehold.co/300x200?text=Slither.io+2",
+    "title": "Growth Dynamics",
+    "image": "https://placehold.co/300x200?text=Growth+Study",
     "url": "https://example.com/embed/slither-io-2",
-    "description": "Slither.io 2 unblocked."
+    "description": "A simulation of competitive growth dynamics."
   },
   {
     "id": "gta-simulator",
-    "title": "GTA Simulator",
-    "image": "https://placehold.co/300x200?text=GTA+Simulator",
+    "title": "Urban Simulation",
+    "image": "https://placehold.co/300x200?text=Urban+Sim",
     "url": "https://example.com/embed/gta-simulator",
-    "description": "GTA Simulator unblocked."
+    "description": "An open-world urban environment simulation."
   },
   {
     "id": "1-12-2-online",
-    "title": "1.12.2 Online",
-    "image": "https://placehold.co/300x200?text=Minecraft+1.12.2",
+    "title": "Voxel Architecture",
+    "image": "https://placehold.co/300x200?text=Architecture",
     "url": "https://example.com/embed/minecraft-1-12-2",
-    "description": "Minecraft 1.12.2 Online unblocked."
+    "description": "A creative voxel-based architectural tool."
   },
   {
     "id": "snow-rider",
-    "title": "Snow Rider",
-    "image": "https://placehold.co/300x200?text=Snow+Rider",
+    "title": "Alpine Physics",
+    "image": "https://placehold.co/300x200?text=Alpine+Sim",
     "url": "https://example.com/embed/snow-rider",
-    "description": "Snow Rider 3D unblocked."
+    "description": "A 3D simulation of alpine descent physics."
   },
   {
     "id": "football-bros",
-    "title": "Football Bros",
-    "image": "https://placehold.co/300x200?text=Football+Bros",
+    "title": "Team Dynamics",
+    "image": "https://placehold.co/300x200?text=Team+Study",
     "url": "https://example.com/embed/football-bros",
-    "description": "Football Bros unblocked."
+    "description": "A simulation of cooperative team sports dynamics."
   },
   {
     "id": "retro-bowl",
-    "title": "Retro Bowl",
-    "image": "https://placehold.co/300x200?text=Retro+Bowl",
+    "title": "Vintage Strategy",
+    "image": "https://placehold.co/300x200?text=Strategy+Study",
     "url": "https://example.com/embed/retro-bowl",
-    "description": "Retro Bowl unblocked."
+    "description": "A strategic management simulation."
   },
   {
     "id": "basket-random",
-    "title": "Basket Random",
-    "image": "https://placehold.co/300x200?text=Basket+Random",
+    "title": "Physics Randomness",
+    "image": "https://placehold.co/300x200?text=Physics+Study",
     "url": "https://example.com/embed/basket-random",
-    "description": "Basket Random unblocked."
+    "description": "A study of random physics interactions."
   },
   {
     "id": "gunspin",
-    "title": "Gunspin",
-    "image": "https://placehold.co/300x200?text=Gunspin",
+    "title": "Recoil Physics",
+    "image": "https://placehold.co/300x200?text=Recoil+Study",
     "url": "https://example.com/embed/gunspin",
-    "description": "Gunspin unblocked."
+    "description": "An interactive demonstration of recoil mechanics."
   }
 ]
