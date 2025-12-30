@@ -215,9 +215,9 @@ nav a:hover, nav a.active {
     width: 100%;
     height: 180px;
     object-fit: cover;
+    object-position: center;
     transition: transform 0.5s;
-    background-color: #000; /* Dark background for transparent images */
-    image-rendering: pixelated; /* Better for retro games */
+    background-color: #0f172a; /* Dark background for transparent images */
 }
 
 .game-card:hover img {
