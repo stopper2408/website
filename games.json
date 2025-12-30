@@ -16,36 +16,12 @@
     "category": "Arcade"
   },
   {
-    "id": "asciispace",
-    "title": "Asciispace",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=asciispace",
-    "url": "games/asciispace/index.html",
-    "description": "Play Asciispace now!",
-    "category": "Arcade"
-  },
-  {
     "id": "asteroids",
     "title": "Asteroids",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=asteroids",
     "url": "games/asteroids/index.html",
     "description": "Play Asteroids now!",
     "category": "Action"
-  },
-  {
-    "id": "astray",
-    "title": "Astray",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=astray",
-    "url": "games/astray/index.html",
-    "description": "Play Astray now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "backcountry",
-    "title": "Backcountry",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=backcountry",
-    "url": "games/backcountry/index.html",
-    "description": "Play Backcountry now!",
-    "category": "Arcade"
   },
   {
     "id": "blackholesquare",
@@ -73,10 +49,10 @@
   },
   {
     "id": "breakout",
-    "title": "Javascript Breakout",
+    "title": "Breakout",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=breakout",
     "url": "games/breakout/index.html",
-    "description": "Play Javascript Breakout now!",
+    "description": "Play Breakout now!",
     "category": "Arcade"
   },
   {
@@ -105,18 +81,18 @@
   },
   {
     "id": "chromedino",
-    "title": "chrome://dino/",
+    "title": "Dino Run",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=chromedino",
     "url": "games/chromedino/index.html",
-    "description": "Play chrome://dino/ now!",
-    "category": "Arcade"
+    "description": "Play Dino Run now!",
+    "category": "Action"
   },
   {
     "id": "connect3",
-    "title": "Connect 3",
+    "title": "Connect",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=connect3",
     "url": "games/connect3/index.html",
-    "description": "Play Connect 3 now!",
+    "description": "Play Connect now!",
     "category": "Puzzle"
   },
   {
@@ -128,20 +104,12 @@
     "category": "Strategy"
   },
   {
-    "id": "edgenotfound",
-    "title": "Edge Not Found",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=edgenotfound",
-    "url": "games/edgenotfound/index.html",
-    "description": "A Sokoban-style puzzle game set on an infinitely repeating grid. Push the boxes to the targets in 20+ tricky puzzles. By Tom Hermans (@Auroriax) for js13k 2020.",
-    "category": "Puzzle"
-  },
-  {
     "id": "evilglitch",
     "title": "Evil Glitch",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=evilglitch",
     "url": "games/evilglitch/index.html",
     "description": "Play Evil Glitch now!",
-    "category": "Arcade"
+    "category": "Action"
   },
   {
     "id": "factoryballsforever",
@@ -149,7 +117,7 @@
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=factoryballsforever",
     "url": "games/factoryballsforever/index.html",
     "description": "Play Factory Balls forever now!",
-    "category": "Arcade"
+    "category": "Puzzle"
   },
   {
     "id": "flappybird",
@@ -165,7 +133,7 @@
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=geometrydash",
     "url": "games/geometrydash/index.html",
     "description": "Play Geometry Dash now!",
-    "category": "Arcade"
+    "category": "Action"
   },
   {
     "id": "hextris",
@@ -176,27 +144,11 @@
     "category": "Puzzle"
   },
   {
-    "id": "konnekt",
-    "title": "konnekt",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=konnekt",
-    "url": "games/konnekt/index.html",
-    "description": "Play konnekt now!",
-    "category": "Arcade"
-  },
-  {
     "id": "minecraft",
-    "title": "Minecraft Javascript Edition",
+    "title": "Minecraft (Clone)",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=minecraft",
     "url": "games/minecraft/index.html",
-    "description": "Play Minecraft Javascript Edition now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "ninjavsevilcorp",
-    "title": "Ninja vs EVILCORP",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=ninjavsevilcorp",
-    "url": "games/ninjavsevilcorp/index.html",
-    "description": "Play Ninja vs EVILCORP now!",
+    "description": "Play Minecraft (Clone) now!",
     "category": "Arcade"
   },
   {
@@ -209,10 +161,10 @@
   },
   {
     "id": "pacman",
-    "title": "jsPacman | JavaScript Ms. Pac-Man Remake",
+    "title": "Pac-Man",
     "image": "games/pacman/favicon.png",
     "url": "games/pacman/index.html",
-    "description": "Play jsPacman | JavaScript Ms. Pac-Man Remake now!",
+    "description": "Play Pac-Man now!",
     "category": "Arcade"
   },
   {
@@ -224,27 +176,11 @@
     "category": "Strategy"
   },
   {
-    "id": "pushback",
-    "title": "Pushback",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=pushback",
-    "url": "games/pushback/index.html",
-    "description": "Play Pushback now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "q1k3",
-    "title": "Q1K3",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=q1k3",
-    "url": "games/q1k3/index.html",
-    "description": "Play Q1K3 now!",
-    "category": "Arcade"
-  },
-  {
     "id": "racer",
-    "title": "Javascript Racer",
+    "title": "Racer",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=racer",
     "url": "games/racer/index.html",
-    "description": "Play Javascript Racer now!",
+    "description": "Play Racer now!",
     "category": "Sports"
   },
   {
@@ -256,44 +192,12 @@
     "category": "Arcade"
   },
   {
-    "id": "retrohaunt",
-    "title": "Retrohaunt",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=retrohaunt",
-    "url": "games/retrohaunt/index.html",
-    "description": "Play Retrohaunt now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "roadblocks",
-    "title": "ROADBLOCKS",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=roadblocks",
-    "url": "games/roadblocks/index.html",
-    "description": "Play ROADBLOCKS now!",
-    "category": "Arcade"
-  },
-  {
     "id": "run3",
-    "title": "Run 3",
+    "title": "Run",
     "image": "games/run3/favicon.png",
     "url": "games/run3/index.html",
-    "description": "Play Run 3 now!",
+    "description": "Play Run now!",
     "category": "Action"
-  },
-  {
-    "id": "shuttledeck",
-    "title": "SHUTTLEDECK",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=shuttledeck",
-    "url": "games/shuttledeck/index.html",
-    "description": "Play SHUTTLEDECK now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "sleepingbeauty",
-    "title": "Sleeping Beauty &ndash; a 7-day roguelike",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=sleepingbeauty",
-    "url": "games/sleepingbeauty/index.html",
-    "description": "Play Sleeping Beauty &ndash; a 7-day roguelike now!",
-    "category": "Arcade"
   },
   {
     "id": "snake",
@@ -312,52 +216,20 @@
     "category": "Arcade"
   },
   {
-    "id": "spacegarden",
-    "title": "Spacegarden",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=spacegarden",
-    "url": "games/spacegarden/index.html",
-    "description": "Play Spacegarden now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "spacehuggers",
-    "title": "Spacehuggers",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=spacehuggers",
-    "url": "games/spacehuggers/index.html",
-    "description": "Play Spacehuggers now!",
-    "category": "Arcade"
-  },
-  {
     "id": "tetris",
-    "title": "TwitchTetris",
+    "title": "Tetris",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=tetris",
     "url": "games/tetris/index.html",
-    "description": "Play TwitchTetris now!",
+    "description": "Play Tetris now!",
     "category": "Puzzle"
   },
   {
-    "id": "themazeofspacegoblins",
-    "title": "Game",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=themazeofspacegoblins",
-    "url": "games/themazeofspacegoblins/index.html",
-    "description": "Play Game now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "towermaster",
-    "title": "Tower",
-    "image": "games/towermaster/assets/main-share-icon.png",
-    "url": "games/towermaster/index.html",
-    "description": "Play Tower now!",
-    "category": "Strategy"
-  },
-  {
     "id": "trimps",
-    "title": "Trimps 5.6.4",
+    "title": "Trimps",
     "image": "games/trimps/favicon.ico",
     "url": "games/trimps/index.html",
     "description": "Trimps",
-    "category": "Arcade"
+    "category": "Strategy"
   },
   {
     "id": "underrun",
@@ -366,13 +238,5 @@
     "url": "games/underrun/index.html",
     "description": "Play UNDERRUN now!",
     "category": "Action"
-  },
-  {
-    "id": "xx142-b2exe",
-    "title": "xx142-b2.exe",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=xx142-b2exe",
-    "url": "games/xx142-b2exe/index.html",
-    "description": "Play xx142-b2.exe now!",
-    "category": "Arcade"
   }
 ]

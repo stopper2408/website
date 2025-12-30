@@ -23,11 +23,11 @@ def get_game_category(title, description):
     combined = title_lower + " " + desc_lower
     
     categories = {
-        "Puzzle": ["2048", "hextris", "tetris", "puzzle", "logic", "sudoku", "connect", "brain"],
-        "Action": ["shooter", "fps", "gun", "fight", "battle", "asteroids", "run", "jump", "platformer", "survival", "tank", "war"],
-        "Strategy": ["tower", "defense", "strategy", "civilization", "empire", "kingdom", "idle", "clicker", "manage"],
+        "Puzzle": ["2048", "hextris", "tetris", "puzzle", "logic", "sudoku", "connect", "brain", "maze", "factory"],
+        "Action": ["shooter", "fps", "gun", "fight", "battle", "asteroids", "run", "jump", "platformer", "survival", "tank", "war", "glitch", "underrun", "geometry"],
+        "Strategy": ["tower", "defense", "strategy", "civilization", "empire", "kingdom", "idle", "clicker", "manage", "trimps", "sim"],
         "Sports": ["soccer", "football", "basketball", "tennis", "golf", "sport", "race", "racing", "drift"],
-        "Arcade": ["arcade", "retro", "classic", "pacman", "snake", "breakout", "space", "invaders"]
+        "Arcade": ["arcade", "retro", "classic", "pacman", "snake", "breakout", "space", "invaders", "dino"]
     }
     
     for cat, keywords in categories.items():
@@ -36,6 +36,19 @@ def get_game_category(title, description):
                 return cat
                 
     return "Arcade" # Default
+
+def clean_title(title):
+    # Remove version numbers
+    title = re.sub(r'\sv?\d+(\.\d+)*', '', title)
+    # Remove "Javascript" or "JS" prefixes/suffixes
+    title = re.sub(r'javascript', '', title, flags=re.IGNORECASE)
+    title = re.sub(r'\bjs\b', '', title, flags=re.IGNORECASE)
+    # Fix HTML entities
+    title = title.replace("&ndash;", "-").replace("&amp;", "&")
+    # Remove file extensions
+    title = title.replace(".exe", "").replace(".html", "")
+    # Clean whitespace
+    return title.strip()
 
 def get_game_metadata(game_dir):
     index_path = os.path.join(game_dir, "index.html")
@@ -120,13 +133,50 @@ def setup_games(source_dir, target_dir):
         
     games_list = []
     
+    # Games to exclude (broken, obscure, or bad quality)
+    BLOCKLIST = [
+        "themazeofspacegoblins", "xx142-b2exe", "konnekt", "q1k3", 
+        "shuttledeck", "ninjavsevilcorp", "edgenotfound", "sleepingbeauty",
+        "backcountry", "astray", "asciispace", "retrohaunt", "pushback",
+        "roadblocks", "spacegarden", "spacehuggers", "towermaster"
+    ]
+    
+    # Manual title overrides
+    TITLE_OVERRIDES = {
+        "chromedino": "Dino Run",
+        "pacman": "Pac-Man",
+        "tetris": "Tetris",
+        "breakout": "Breakout",
+        "racer": "Racer",
+        "minecraft": "Minecraft (Clone)",
+        "trimps": "Trimps",
+        "cookieclicker": "Cookie Clicker",
+        "2048": "2048",
+        "hextris": "Hextris"
+    }
+
     print("Processing HTML5 games...")
     if os.path.exists(html5_source):
         for game_name in os.listdir(html5_source):
+            if game_name in BLOCKLIST:
+                print(f"Skipping blocked game: {game_name}")
+                continue
+                
             game_source_path = os.path.join(html5_source, game_name)
             if os.path.isdir(game_source_path):
                 target_game_path = os.path.join(target_dir, game_name)
                 
+                # Check for index.html
+                index_file = os.path.join(game_source_path, "index.html")
+                if not os.path.exists(index_file):
+                    print(f"Skipping {game_name}: No index.html")
+                    continue
+                    
+                # Check file size (skip empty/tiny files)
+                if os.path.getsize(index_file) < 100:
+                    print(f"Skipping {game_name}: index.html too small")
+                    continue
+
                 # Copy game files
                 if os.path.exists(target_game_path):
                     shutil.rmtree(target_game_path)
@@ -136,7 +186,14 @@ def setup_games(source_dir, target_dir):
                 # Get metadata
                 extracted_title, extracted_desc, extracted_image = get_game_metadata(target_game_path)
                 
-                title = extracted_title if extracted_title else game_name.replace("-", " ").title()
+                # Determine title
+                if game_name in TITLE_OVERRIDES:
+                    title = TITLE_OVERRIDES[game_name]
+                elif extracted_title:
+                    title = clean_title(extracted_title)
+                else:
+                    title = game_name.replace("-", " ").title()
+                
                 description = extracted_desc if extracted_desc else f"Play {title} now!"
                 image = extracted_image if extracted_image else "https://placehold.co/300x200/1e293b/3b82f6?text=" + game_name
                 
