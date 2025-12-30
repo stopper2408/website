@@ -1,243 +1,12 @@
 [
   {
-    "id": "2048",
-    "title": "2048",
-    "image": "games/2048/favicon.ico",
-    "url": "games/2048/index.html",
-    "description": "Play 2048 now!",
-    "category": "Puzzle"
-  },
-  {
-    "id": "adarkroom",
-    "title": "A Dark Room",
-    "image": "games/adarkroom/favicon.ico",
-    "url": "games/adarkroom/index.html",
-    "description": "Play A Dark Room now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "asteroids",
-    "title": "Asteroids",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=asteroids",
-    "url": "games/asteroids/index.html",
-    "description": "Play Asteroids now!",
-    "category": "Action"
-  },
-  {
-    "id": "blackholesquare",
-    "title": "Black Hole Square",
-    "image": "games/blackholesquare/icon.png",
-    "url": "games/blackholesquare/index.html",
-    "description": "Clean the universe!",
-    "category": "Arcade"
-  },
-  {
-    "id": "bounceback",
-    "title": "Bounce Back",
-    "image": "games/bounceback/screenshot.png",
-    "url": "games/bounceback/index.html",
-    "description": "Play Bounce Back now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "breaklock",
-    "title": "BreakLock",
-    "image": "games/breaklock/assets/icons/icon-144x144.png",
-    "url": "games/breaklock/index.html",
-    "description": "Play BreakLock now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "breakout",
-    "title": "Breakout",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=breakout",
-    "url": "games/breakout/index.html",
-    "description": "Play Breakout now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "captaincallisto",
-    "title": "Captain Callisto",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=captaincallisto",
-    "url": "games/captaincallisto/index.html",
-    "description": "Play Captain Callisto now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "chess",
-    "title": "Chess",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=chess",
-    "url": "games/chess/index.html",
-    "description": "Play Chess now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "chromaincident",
-    "title": "JS13k",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=chromaincident",
-    "url": "games/chromaincident/index.html",
-    "description": "Play JS13k now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "chromedino",
-    "title": "Dino Run",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=chromedino",
-    "url": "games/chromedino/index.html",
-    "description": "Play Dino Run now!",
-    "category": "Action"
-  },
-  {
-    "id": "connect3",
-    "title": "Connect",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=connect3",
-    "url": "games/connect3/index.html",
-    "description": "Play Connect now!",
-    "category": "Puzzle"
-  },
-  {
-    "id": "cookieclicker",
-    "title": "Cookie Clicker",
-    "image": "games/cookieclicker/img/dungeonIcons.png",
-    "url": "games/cookieclicker/index.html",
-    "description": "Play Cookie Clicker now!",
-    "category": "Strategy"
-  },
-  {
-    "id": "evilglitch",
-    "title": "Evil Glitch",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=evilglitch",
-    "url": "games/evilglitch/index.html",
-    "description": "Play Evil Glitch now!",
-    "category": "Action"
-  },
-  {
-    "id": "factoryballsforever",
-    "title": "Factory Balls forever",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=factoryballsforever",
-    "url": "games/factoryballsforever/index.html",
-    "description": "Play Factory Balls forever now!",
-    "category": "Puzzle"
-  },
-  {
-    "id": "flappybird",
-    "title": "Flappy Bird",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=flappybird",
-    "url": "games/flappybird/index.html",
-    "description": "Play Flappy Bird now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "geometrydash",
-    "title": "Geometry Dash",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=geometrydash",
-    "url": "games/geometrydash/index.html",
-    "description": "Play Geometry Dash now!",
-    "category": "Action"
-  },
-  {
-    "id": "hextris",
-    "title": "Hextris",
-    "image": "games/hextris/favicon.ico",
-    "url": "games/hextris/index.html",
-    "description": "An addictive puzzle game inspired by Tetris.",
-    "category": "Puzzle"
-  },
-  {
-    "id": "minecraft",
-    "title": "Minecraft (Clone)",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=minecraft",
-    "url": "games/minecraft/index.html",
-    "description": "Play Minecraft (Clone) now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "packabunchas",
-    "title": "PACKABUNCHAS",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=packabunchas",
-    "url": "games/packabunchas/index.html",
-    "description": "Play PACKABUNCHAS now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "pacman",
-    "title": "Pac-Man",
-    "image": "games/pacman/favicon.png",
-    "url": "games/pacman/index.html",
-    "description": "Play Pac-Man now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "particleclicker",
-    "title": "Particle Clicker",
-    "image": "games/particleclicker/favicon.ico",
-    "url": "games/particleclicker/index.html",
-    "description": "An addictive incremental game that was made during the CERN Webfest 2014. It takes the player on a historic journey through modern particle physics.",
-    "category": "Strategy"
-  },
-  {
-    "id": "racer",
-    "title": "Racer",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=racer",
-    "url": "games/racer/index.html",
-    "description": "Play Racer now!",
-    "category": "Sports"
-  },
-  {
-    "id": "radiusraid",
-    "title": "Radius Raid",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=radiusraid",
-    "url": "games/radiusraid/index.html",
-    "description": "Play Radius Raid now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "run3",
-    "title": "Run",
-    "image": "games/run3/favicon.png",
-    "url": "games/run3/index.html",
-    "description": "Play Run now!",
-    "category": "Action"
-  },
-  {
-    "id": "snake",
-    "title": "Snake",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=snake",
-    "url": "games/snake/index.html",
-    "description": "Play Snake now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "spacecompany",
-    "title": "Space Company",
-    "image": "games/spacecompany/SpaceCompanyFavicon.png",
-    "url": "games/spacecompany/index.html",
-    "description": "Play Space Company now!",
-    "category": "Arcade"
-  },
-  {
-    "id": "tetris",
-    "title": "Tetris",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=tetris",
-    "url": "games/tetris/index.html",
-    "description": "Play Tetris now!",
-    "category": "Puzzle"
-  },
-  {
-    "id": "trimps",
-    "title": "Trimps",
-    "image": "games/trimps/favicon.ico",
-    "url": "games/trimps/index.html",
-    "description": "Trimps",
-    "category": "Strategy"
-  },
-  {
-    "id": "underrun",
-    "title": "UNDERRUN",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=underrun",
-    "url": "games/underrun/index.html",
-    "description": "Play UNDERRUN now!",
-    "category": "Action"
+    "id": "subway-surfers",
+    "title": "Subway Surfers",
+    "image": "games/subway-surfers/favicon.ico",
+    "url": "games/subway-surfers/index.html",
+    "description": "Subway Surfers is a popular mobile game that challenges players to run as fast as they can on subway tracks while avoiding obstacles and collecting coins.",
+    "category": "Action",
+    "popularity": 100
   },
   {
     "id": "slope",
@@ -245,14 +14,276 @@
     "image": "games/slope/img/logo.png",
     "url": "games/slope/index.html",
     "description": "Play Slope Game now!",
-    "category": "Action"
+    "category": "Action",
+    "popularity": 95
   },
   {
-    "id": "subway-surfers",
-    "title": "Subway Surfers | Play Free HTML5 Games",
-    "image": "games/subway-surfers/favicon.ico",
-    "url": "games/subway-surfers/index.html",
-    "description": "Subway Surfers adalah permainan mobile populer yang menantang pemain untuk berlari secepat mungkin di atas rel kereta bawah tanah sambil menghindari rintangan dan mengumpulkan koin. Dengan grafis yang cerah dan aksi cepat, game ini telah menjadi favorit di kalangan pengguna ponsel di seluruh dunia.",
-    "category": "Action"
+    "id": "minecraft",
+    "title": "Minecraft (Clone)",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=minecraft",
+    "url": "games/minecraft/index.html",
+    "description": "Play Minecraft (Clone) now!",
+    "category": "Arcade",
+    "popularity": 90
+  },
+  {
+    "id": "geometrydash",
+    "title": "Geometry Dash",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=geometrydash",
+    "url": "games/geometrydash/index.html",
+    "description": "Play Geometry Dash now!",
+    "category": "Action",
+    "popularity": 85
+  },
+  {
+    "id": "2048",
+    "title": "2048",
+    "image": "games/2048/favicon.ico",
+    "url": "games/2048/index.html",
+    "description": "Play 2048 now!",
+    "category": "Puzzle",
+    "popularity": 80
+  },
+  {
+    "id": "flappybird",
+    "title": "Flappy Bird",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=flappybird",
+    "url": "games/flappybird/index.html",
+    "description": "Play Flappy Bird now!",
+    "category": "Arcade",
+    "popularity": 75
+  },
+  {
+    "id": "tetris",
+    "title": "Tetris",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=tetris",
+    "url": "games/tetris/index.html",
+    "description": "Play Tetris now!",
+    "category": "Puzzle",
+    "popularity": 70
+  },
+  {
+    "id": "pacman",
+    "title": "Pac-Man",
+    "image": "games/pacman/favicon.png",
+    "url": "games/pacman/index.html",
+    "description": "Play Pac-Man now!",
+    "category": "Arcade",
+    "popularity": 65
+  },
+  {
+    "id": "cookieclicker",
+    "title": "Cookie Clicker",
+    "image": "games/cookieclicker/img/dungeonIcons.png",
+    "url": "games/cookieclicker/index.html",
+    "description": "Play Cookie Clicker now!",
+    "category": "Strategy",
+    "popularity": 60
+  },
+  {
+    "id": "run3",
+    "title": "Run",
+    "image": "games/run3/favicon.png",
+    "url": "games/run3/index.html",
+    "description": "Play Run now!",
+    "category": "Action",
+    "popularity": 55
+  },
+  {
+    "id": "chromedino",
+    "title": "Dino Run",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=chromedino",
+    "url": "games/chromedino/index.html",
+    "description": "Play Dino Run now!",
+    "category": "Action",
+    "popularity": 50
+  },
+  {
+    "id": "asteroids",
+    "title": "Asteroids",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=asteroids",
+    "url": "games/asteroids/index.html",
+    "description": "Play Asteroids now!",
+    "category": "Action",
+    "popularity": 45
+  },
+  {
+    "id": "snake",
+    "title": "Snake",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=snake",
+    "url": "games/snake/index.html",
+    "description": "Play Snake now!",
+    "category": "Arcade",
+    "popularity": 40
+  },
+  {
+    "id": "hextris",
+    "title": "Hextris",
+    "image": "games/hextris/favicon.ico",
+    "url": "games/hextris/index.html",
+    "description": "An addictive puzzle game inspired by Tetris.",
+    "category": "Puzzle",
+    "popularity": 35
+  },
+  {
+    "id": "breakout",
+    "title": "Breakout",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=breakout",
+    "url": "games/breakout/index.html",
+    "description": "Play Breakout now!",
+    "category": "Arcade",
+    "popularity": 30
+  },
+  {
+    "id": "chess",
+    "title": "Chess",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=chess",
+    "url": "games/chess/index.html",
+    "description": "Play Chess now!",
+    "category": "Arcade",
+    "popularity": 25
+  },
+  {
+    "id": "adarkroom",
+    "title": "A Dark Room",
+    "image": "games/adarkroom/favicon.ico",
+    "url": "games/adarkroom/index.html",
+    "description": "Play A Dark Room now!",
+    "category": "Arcade",
+    "popularity": 10
+  },
+  {
+    "id": "blackholesquare",
+    "title": "Black Hole Square",
+    "image": "games/blackholesquare/icon.png",
+    "url": "games/blackholesquare/index.html",
+    "description": "Clean the universe!",
+    "category": "Arcade",
+    "popularity": 10
+  },
+  {
+    "id": "bounceback",
+    "title": "Bounce Back",
+    "image": "games/bounceback/screenshot.png",
+    "url": "games/bounceback/index.html",
+    "description": "Play Bounce Back now!",
+    "category": "Arcade",
+    "popularity": 10
+  },
+  {
+    "id": "breaklock",
+    "title": "BreakLock",
+    "image": "games/breaklock/assets/icons/icon-144x144.png",
+    "url": "games/breaklock/index.html",
+    "description": "Play BreakLock now!",
+    "category": "Arcade",
+    "popularity": 10
+  },
+  {
+    "id": "captaincallisto",
+    "title": "Captain Callisto",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=captaincallisto",
+    "url": "games/captaincallisto/index.html",
+    "description": "Play Captain Callisto now!",
+    "category": "Arcade",
+    "popularity": 10
+  },
+  {
+    "id": "chromaincident",
+    "title": "JS13k",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=chromaincident",
+    "url": "games/chromaincident/index.html",
+    "description": "Play JS13k now!",
+    "category": "Arcade",
+    "popularity": 10
+  },
+  {
+    "id": "connect3",
+    "title": "Connect",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=connect3",
+    "url": "games/connect3/index.html",
+    "description": "Play Connect now!",
+    "category": "Puzzle",
+    "popularity": 10
+  },
+  {
+    "id": "evilglitch",
+    "title": "Evil Glitch",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=evilglitch",
+    "url": "games/evilglitch/index.html",
+    "description": "Play Evil Glitch now!",
+    "category": "Action",
+    "popularity": 10
+  },
+  {
+    "id": "factoryballsforever",
+    "title": "Factory Balls forever",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=factoryballsforever",
+    "url": "games/factoryballsforever/index.html",
+    "description": "Play Factory Balls forever now!",
+    "category": "Puzzle",
+    "popularity": 10
+  },
+  {
+    "id": "packabunchas",
+    "title": "PACKABUNCHAS",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=packabunchas",
+    "url": "games/packabunchas/index.html",
+    "description": "Play PACKABUNCHAS now!",
+    "category": "Arcade",
+    "popularity": 10
+  },
+  {
+    "id": "particleclicker",
+    "title": "Particle Clicker",
+    "image": "games/particleclicker/favicon.ico",
+    "url": "games/particleclicker/index.html",
+    "description": "An addictive incremental game that was made during the CERN Webfest 2014. It takes the player on a historic journey through modern particle physics.",
+    "category": "Strategy",
+    "popularity": 10
+  },
+  {
+    "id": "racer",
+    "title": "Racer",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=racer",
+    "url": "games/racer/index.html",
+    "description": "Play Racer now!",
+    "category": "Sports",
+    "popularity": 10
+  },
+  {
+    "id": "radiusraid",
+    "title": "Radius Raid",
+    "image": "games/radiusraid/index.html",
+    "description": "Play Radius Raid now!",
+    "category": "Arcade",
+    "popularity": 10
+  },
+  {
+    "id": "spacecompany",
+    "title": "Space Company",
+    "image": "games/spacecompany/SpaceCompanyFavicon.png",
+    "url": "games/spacecompany/index.html",
+    "description": "Play Space Company now!",
+    "category": "Arcade",
+    "popularity": 10
+  },
+  {
+    "id": "trimps",
+    "title": "Trimps",
+    "image": "games/trimps/favicon.ico",
+    "url": "games/trimps/index.html",
+    "description": "Trimps",
+    "category": "Strategy",
+    "popularity": 10
+  },
+  {
+    "id": "underrun",
+    "title": "UNDERRUN",
+    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=underrun",
+    "url": "games/underrun/index.html",
+    "description": "Play UNDERRUN now!",
+    "category": "Action",
+    "popularity": 10
   }
 ]
