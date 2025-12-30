@@ -2,7 +2,7 @@
   {
     "id": "subway-surfers",
     "title": "Subway Surfers",
-    "image": "games/subway-surfers/favicon.ico",
+    "image": "thumbnails/subway-surfers.png",
     "url": "games/subway-surfers/index.html",
     "description": "Subway Surfers is a popular mobile game that challenges players to run as fast as they can on subway tracks while avoiding obstacles and collecting coins.",
     "category": "Action",
@@ -11,7 +11,7 @@
   {
     "id": "slope",
     "title": "Slope Game",
-    "image": "games/slope/img/logo.png",
+    "image": "thumbnails/slope.png",
     "url": "games/slope/index.html",
     "description": "Play Slope Game now!",
     "category": "Action",
@@ -20,7 +20,7 @@
   {
     "id": "minecraft",
     "title": "Minecraft (Clone)",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=minecraft",
+    "image": "thumbnails/minecraft.png",
     "url": "games/minecraft/index.html",
     "description": "Play Minecraft (Clone) now!",
     "category": "Arcade",
@@ -29,7 +29,7 @@
   {
     "id": "geometrydash",
     "title": "Geometry Dash",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=geometrydash",
+    "image": "thumbnails/geometrydash.png",
     "url": "games/geometrydash/index.html",
     "description": "Play Geometry Dash now!",
     "category": "Action",
@@ -38,7 +38,7 @@
   {
     "id": "2048",
     "title": "2048",
-    "image": "games/2048/favicon.ico",
+    "image": "thumbnails/2048.png",
     "url": "games/2048/index.html",
     "description": "Play 2048 now!",
     "category": "Puzzle",
@@ -47,7 +47,7 @@
   {
     "id": "flappybird",
     "title": "Flappy Bird",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=flappybird",
+    "image": "thumbnails/flappybird.png",
     "url": "games/flappybird/index.html",
     "description": "Play Flappy Bird now!",
     "category": "Arcade",
@@ -56,7 +56,7 @@
   {
     "id": "tetris",
     "title": "Tetris",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=tetris",
+    "image": "thumbnails/tetris.png",
     "url": "games/tetris/index.html",
     "description": "Play Tetris now!",
     "category": "Puzzle",
@@ -65,7 +65,7 @@
   {
     "id": "pacman",
     "title": "Pac-Man",
-    "image": "games/pacman/favicon.png",
+    "image": "thumbnails/pacman.png",
     "url": "games/pacman/index.html",
     "description": "Play Pac-Man now!",
     "category": "Arcade",
@@ -74,7 +74,7 @@
   {
     "id": "cookieclicker",
     "title": "Cookie Clicker",
-    "image": "games/cookieclicker/img/dungeonIcons.png",
+    "image": "thumbnails/cookieclicker.png",
     "url": "games/cookieclicker/index.html",
     "description": "Play Cookie Clicker now!",
     "category": "Strategy",
@@ -83,7 +83,7 @@
   {
     "id": "run3",
     "title": "Run",
-    "image": "games/run3/favicon.png",
+    "image": "thumbnails/run3.png",
     "url": "games/run3/index.html",
     "description": "Play Run now!",
     "category": "Action",
@@ -92,7 +92,7 @@
   {
     "id": "chromedino",
     "title": "Dino Run",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=chromedino",
+    "image": "thumbnails/chromedino.png",
     "url": "games/chromedino/index.html",
     "description": "Play Dino Run now!",
     "category": "Action",
@@ -101,7 +101,7 @@
   {
     "id": "asteroids",
     "title": "Asteroids",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=asteroids",
+    "image": "thumbnails/asteroids.png",
     "url": "games/asteroids/index.html",
     "description": "Play Asteroids now!",
     "category": "Action",
@@ -110,7 +110,7 @@
   {
     "id": "snake",
     "title": "Snake",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=snake",
+    "image": "thumbnails/snake.png",
     "url": "games/snake/index.html",
     "description": "Play Snake now!",
     "category": "Arcade",
@@ -119,7 +119,7 @@
   {
     "id": "hextris",
     "title": "Hextris",
-    "image": "games/hextris/favicon.ico",
+    "image": "thumbnails/hextris.png",
     "url": "games/hextris/index.html",
     "description": "An addictive puzzle game inspired by Tetris.",
     "category": "Puzzle",
@@ -128,7 +128,7 @@
   {
     "id": "breakout",
     "title": "Breakout",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=breakout",
+    "image": "thumbnails/breakout.png",
     "url": "games/breakout/index.html",
     "description": "Play Breakout now!",
     "category": "Arcade",
@@ -137,7 +137,7 @@
   {
     "id": "chess",
     "title": "Chess",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=chess",
+    "image": "thumbnails/chess.png",
     "url": "games/chess/index.html",
     "description": "Play Chess now!",
     "category": "Arcade",
@@ -146,7 +146,7 @@
   {
     "id": "adarkroom",
     "title": "A Dark Room",
-    "image": "games/adarkroom/favicon.ico",
+    "image": "thumbnails/adarkroom.png",
     "url": "games/adarkroom/index.html",
     "description": "Play A Dark Room now!",
     "category": "Arcade",
@@ -155,7 +155,7 @@
   {
     "id": "blackholesquare",
     "title": "Black Hole Square",
-    "image": "games/blackholesquare/icon.png",
+    "image": "thumbnails/blackholesquare.png",
     "url": "games/blackholesquare/index.html",
     "description": "Clean the universe!",
     "category": "Arcade",
@@ -164,7 +164,7 @@
   {
     "id": "bounceback",
     "title": "Bounce Back",
-    "image": "games/bounceback/screenshot.png",
+    "image": "thumbnails/bounceback.png",
     "url": "games/bounceback/index.html",
     "description": "Play Bounce Back now!",
     "category": "Arcade",
@@ -173,7 +173,7 @@
   {
     "id": "breaklock",
     "title": "BreakLock",
-    "image": "games/breaklock/assets/icons/icon-144x144.png",
+    "image": "thumbnails/breaklock.png",
     "url": "games/breaklock/index.html",
     "description": "Play BreakLock now!",
     "category": "Arcade",
@@ -182,7 +182,7 @@
   {
     "id": "captaincallisto",
     "title": "Captain Callisto",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=captaincallisto",
+    "image": "thumbnails/captaincallisto.png",
     "url": "games/captaincallisto/index.html",
     "description": "Play Captain Callisto now!",
     "category": "Arcade",
@@ -191,7 +191,7 @@
   {
     "id": "chromaincident",
     "title": "JS13k",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=chromaincident",
+    "image": "thumbnails/chromaincident.png",
     "url": "games/chromaincident/index.html",
     "description": "Play JS13k now!",
     "category": "Arcade",
@@ -200,7 +200,7 @@
   {
     "id": "connect3",
     "title": "Connect",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=connect3",
+    "image": "thumbnails/connect3.png",
     "url": "games/connect3/index.html",
     "description": "Play Connect now!",
     "category": "Puzzle",
@@ -209,7 +209,7 @@
   {
     "id": "evilglitch",
     "title": "Evil Glitch",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=evilglitch",
+    "image": "thumbnails/evilglitch.png",
     "url": "games/evilglitch/index.html",
     "description": "Play Evil Glitch now!",
     "category": "Action",
@@ -218,7 +218,7 @@
   {
     "id": "factoryballsforever",
     "title": "Factory Balls forever",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=factoryballsforever",
+    "image": "thumbnails/factoryballsforever.png",
     "url": "games/factoryballsforever/index.html",
     "description": "Play Factory Balls forever now!",
     "category": "Puzzle",
@@ -227,7 +227,7 @@
   {
     "id": "packabunchas",
     "title": "PACKABUNCHAS",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=packabunchas",
+    "image": "thumbnails/packabunchas.png",
     "url": "games/packabunchas/index.html",
     "description": "Play PACKABUNCHAS now!",
     "category": "Arcade",
@@ -236,7 +236,7 @@
   {
     "id": "particleclicker",
     "title": "Particle Clicker",
-    "image": "games/particleclicker/favicon.ico",
+    "image": "thumbnails/particleclicker.png",
     "url": "games/particleclicker/index.html",
     "description": "An addictive incremental game that was made during the CERN Webfest 2014. It takes the player on a historic journey through modern particle physics.",
     "category": "Strategy",
@@ -245,7 +245,7 @@
   {
     "id": "racer",
     "title": "Racer",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=racer",
+    "image": "thumbnails/racer.png",
     "url": "games/racer/index.html",
     "description": "Play Racer now!",
     "category": "Sports",
@@ -254,7 +254,7 @@
   {
     "id": "radiusraid",
     "title": "Radius Raid",
-    "image": "games/radiusraid/index.html",
+    "image": "thumbnails/radiusraid.png",
     "description": "Play Radius Raid now!",
     "category": "Arcade",
     "popularity": 10
@@ -262,7 +262,7 @@
   {
     "id": "spacecompany",
     "title": "Space Company",
-    "image": "games/spacecompany/SpaceCompanyFavicon.png",
+    "image": "thumbnails/spacecompany.png",
     "url": "games/spacecompany/index.html",
     "description": "Play Space Company now!",
     "category": "Arcade",
@@ -271,7 +271,7 @@
   {
     "id": "trimps",
     "title": "Trimps",
-    "image": "games/trimps/favicon.ico",
+    "image": "thumbnails/trimps.png",
     "url": "games/trimps/index.html",
     "description": "Trimps",
     "category": "Strategy",
@@ -280,7 +280,7 @@
   {
     "id": "underrun",
     "title": "UNDERRUN",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=underrun",
+    "image": "thumbnails/underrun.png",
     "url": "games/underrun/index.html",
     "description": "Play UNDERRUN now!",
     "category": "Action",
