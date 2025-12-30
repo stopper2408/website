@@ -1,0 +1,100 @@
+[
+  {
+    "id": "hextris",
+    "title": "Hextris",
+    "image": "https://placehold.co/300x200?text=Hextris",
+    "url": "games/hextris/index.html",
+    "description": "An addictive puzzle game inspired by Tetris."
+  },
+  {
+    "id": "cookie-clicker",
+    "title": "Cookie Clicker",
+    "image": "https://placehold.co/300x200?text=Cookie+Clicker",
+    "url": "games/cookieclicker/index.html",
+    "description": "The original idle game where you bake cookies."
+  },
+  {
+    "id": "fnf-3d",
+    "title": "FNF 3D",
+    "image": "https://placehold.co/300x200?text=FNF+3D",
+    "url": "https://example.com/embed/fnf-3d",
+    "description": "Five Nights at Freddy's 3D Unblocked game."
+  },
+  {
+    "id": "clash",
+    "title": "Clash",
+    "image": "https://placehold.co/300x200?text=Clash",
+    "url": "https://example.com/embed/clash",
+    "description": "Clash unblocked game."
+  },
+  {
+    "id": "survival-race",
+    "title": "Survival Race",
+    "image": "https://placehold.co/300x200?text=Survival+Race",
+    "url": "https://example.com/embed/survival-race",
+    "description": "Adrenaline-pumping Survival Race."
+  },
+  {
+    "id": "rocketgoal-io",
+    "title": "RocketGoal.io",
+    "image": "https://placehold.co/300x200?text=RocketGoal.io",
+    "url": "https://example.com/embed/rocketgoal-io",
+    "description": "RocketGoal.io unblocked."
+  },
+  {
+    "id": "slither-io-2",
+    "title": "Slither.io 2",
+    "image": "https://placehold.co/300x200?text=Slither.io+2",
+    "url": "https://example.com/embed/slither-io-2",
+    "description": "Slither.io 2 unblocked."
+  },
+  {
+    "id": "gta-simulator",
+    "title": "GTA Simulator",
+    "image": "https://placehold.co/300x200?text=GTA+Simulator",
+    "url": "https://example.com/embed/gta-simulator",
+    "description": "GTA Simulator unblocked."
+  },
+  {
+    "id": "1-12-2-online",
+    "title": "1.12.2 Online",
+    "image": "https://placehold.co/300x200?text=Minecraft+1.12.2",
+    "url": "https://example.com/embed/minecraft-1-12-2",
+    "description": "Minecraft 1.12.2 Online unblocked."
+  },
+  {
+    "id": "snow-rider",
+    "title": "Snow Rider",
+    "image": "https://placehold.co/300x200?text=Snow+Rider",
+    "url": "https://example.com/embed/snow-rider",
+    "description": "Snow Rider 3D unblocked."
+  },
+  {
+    "id": "football-bros",
+    "title": "Football Bros",
+    "image": "https://placehold.co/300x200?text=Football+Bros",
+    "url": "https://example.com/embed/football-bros",
+    "description": "Football Bros unblocked."
+  },
+  {
+    "id": "retro-bowl",
+    "title": "Retro Bowl",
+    "image": "https://placehold.co/300x200?text=Retro+Bowl",
+    "url": "https://example.com/embed/retro-bowl",
+    "description": "Retro Bowl unblocked."
+  },
+  {
+    "id": "basket-random",
+    "title": "Basket Random",
+    "image": "https://placehold.co/300x200?text=Basket+Random",
+    "url": "https://example.com/embed/basket-random",
+    "description": "Basket Random unblocked."
+  },
+  {
+    "id": "gunspin",
+    "title": "Gunspin",
+    "image": "https://placehold.co/300x200?text=Gunspin",
+    "url": "https://example.com/embed/gunspin",
+    "description": "Gunspin unblocked."
+  }
+]
