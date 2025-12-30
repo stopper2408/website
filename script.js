@@ -84,12 +84,15 @@ function renderGames(games) {
 function filterGames(searchTerm, category = 'all') {
     const term = searchTerm.toLowerCase();
     let filtered = allGames.filter(game => 
-        game.title.toLowerCase().includes(term) || 
-        game.description.toLowerCase().includes(term)
+        (game.title.toLowerCase().includes(term) || 
+        game.description.toLowerCase().includes(term))
     );
 
-    // Note: Real category filtering would require categories in JSON. 
-    // For now, we just show all unless it's favorites.
+    if (category !== 'all') {
+        filtered = filtered.filter(game => 
+            game.category && game.category.toLowerCase() === category.toLowerCase()
+        );
+    }
     
     renderGames(filtered);
 }
@@ -127,6 +130,8 @@ async function loadGame(gameId) {
             document.title = `${game.title} - DocuWatch`;
             document.getElementById('game-title').textContent = game.title;
             document.getElementById('game-description').textContent = game.description;
+            const catEl = document.getElementById('game-category');
+            if (catEl) catEl.textContent = game.category || 'Arcade';
             document.getElementById('game-frame').src = game.url;
         } else {
             document.getElementById('game-details').style.display = 'none';

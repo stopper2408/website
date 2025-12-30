@@ -5,7 +5,7 @@
     "image": "games/2048/favicon.ico",
     "url": "games/2048/index.html",
     "description": "Play 2048 now!",
-    "category": "Arcade"
+    "category": "Puzzle"
   },
   {
     "id": "adarkroom",
@@ -29,7 +29,7 @@
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=asteroids",
     "url": "games/asteroids/index.html",
     "description": "Play Asteroids now!",
-    "category": "Arcade"
+    "category": "Action"
   },
   {
     "id": "astray",
@@ -58,7 +58,7 @@
   {
     "id": "bounceback",
     "title": "Bounce Back",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=bounceback",
+    "image": "games/bounceback/screenshot.png",
     "url": "games/bounceback/index.html",
     "description": "Play Bounce Back now!",
     "category": "Arcade"
@@ -66,7 +66,7 @@
   {
     "id": "breaklock",
     "title": "BreakLock",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=breaklock",
+    "image": "games/breaklock/assets/icons/icon-144x144.png",
     "url": "games/breaklock/index.html",
     "description": "Play BreakLock now!",
     "category": "Arcade"
@@ -117,15 +117,15 @@
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=connect3",
     "url": "games/connect3/index.html",
     "description": "Play Connect 3 now!",
-    "category": "Arcade"
+    "category": "Puzzle"
   },
   {
     "id": "cookieclicker",
     "title": "Cookie Clicker",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=cookieclicker",
+    "image": "games/cookieclicker/img/dungeonIcons.png",
     "url": "games/cookieclicker/index.html",
     "description": "Play Cookie Clicker now!",
-    "category": "Arcade"
+    "category": "Strategy"
   },
   {
     "id": "edgenotfound",
@@ -133,7 +133,7 @@
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=edgenotfound",
     "url": "games/edgenotfound/index.html",
     "description": "A Sokoban-style puzzle game set on an infinitely repeating grid. Push the boxes to the targets in 20+ tricky puzzles. By Tom Hermans (@Auroriax) for js13k 2020.",
-    "category": "Arcade"
+    "category": "Puzzle"
   },
   {
     "id": "evilglitch",
@@ -173,7 +173,7 @@
     "image": "games/hextris/favicon.ico",
     "url": "games/hextris/index.html",
     "description": "An addictive puzzle game inspired by Tetris.",
-    "category": "Arcade"
+    "category": "Puzzle"
   },
   {
     "id": "konnekt",
@@ -210,7 +210,7 @@
   {
     "id": "pacman",
     "title": "jsPacman | JavaScript Ms. Pac-Man Remake",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=pacman",
+    "image": "games/pacman/favicon.png",
     "url": "games/pacman/index.html",
     "description": "Play jsPacman | JavaScript Ms. Pac-Man Remake now!",
     "category": "Arcade"
@@ -221,7 +221,7 @@
     "image": "games/particleclicker/favicon.ico",
     "url": "games/particleclicker/index.html",
     "description": "An addictive incremental game that was made during the CERN Webfest 2014. It takes the player on a historic journey through modern particle physics.",
-    "category": "Arcade"
+    "category": "Strategy"
   },
   {
     "id": "pushback",
@@ -245,7 +245,7 @@
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=racer",
     "url": "games/racer/index.html",
     "description": "Play Javascript Racer now!",
-    "category": "Arcade"
+    "category": "Sports"
   },
   {
     "id": "radiusraid",
@@ -274,10 +274,10 @@
   {
     "id": "run3",
     "title": "Run 3",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=run3",
+    "image": "games/run3/favicon.png",
     "url": "games/run3/index.html",
     "description": "Play Run 3 now!",
-    "category": "Arcade"
+    "category": "Action"
   },
   {
     "id": "shuttledeck",
@@ -306,7 +306,7 @@
   {
     "id": "spacecompany",
     "title": "Space Company",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=spacecompany",
+    "image": "games/spacecompany/SpaceCompanyFavicon.png",
     "url": "games/spacecompany/index.html",
     "description": "Play Space Company now!",
     "category": "Arcade"
@@ -333,7 +333,7 @@
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=tetris",
     "url": "games/tetris/index.html",
     "description": "Play TwitchTetris now!",
-    "category": "Arcade"
+    "category": "Puzzle"
   },
   {
     "id": "themazeofspacegoblins",
@@ -346,10 +346,10 @@
   {
     "id": "towermaster",
     "title": "Tower",
-    "image": "https://placehold.co/300x200/1e293b/3b82f6?text=towermaster",
+    "image": "games/towermaster/assets/main-share-icon.png",
     "url": "games/towermaster/index.html",
     "description": "Play Tower now!",
-    "category": "Arcade"
+    "category": "Strategy"
   },
   {
     "id": "trimps",
@@ -365,7 +365,7 @@
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=underrun",
     "url": "games/underrun/index.html",
     "description": "Play UNDERRUN now!",
-    "category": "Arcade"
+    "category": "Action"
   },
   {
     "id": "xx142-b2exe",
