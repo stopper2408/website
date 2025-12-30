@@ -22,10 +22,10 @@ async function fetchGames() {
         allGames = await response.json();
         renderGames(allGames);
     } catch (error) {
-        console.error('Error fetching games:', error);
+        console.error('Error fetching content:', error);
         const gamesGrid = document.getElementById('games-grid');
         if (gamesGrid) {
-            gamesGrid.innerHTML = '<p>Error loading games. Please try again later.</p>';
+            gamesGrid.innerHTML = '<p>Error loading archives. Please try again later.</p>';
         }
     }
 }
@@ -35,7 +35,7 @@ function renderGames(games) {
     gamesGrid.innerHTML = '';
 
     if (games.length === 0) {
-        gamesGrid.innerHTML = '<p>No games found.</p>';
+        gamesGrid.innerHTML = '<p>No content found matching your criteria.</p>';
         return;
     }
 
@@ -49,6 +49,7 @@ function renderGames(games) {
             <div class="game-info">
                 <h3>${game.title}</h3>
                 <p>${game.description}</p>
+                <div class="play-btn">Watch Now</div>
             </div>
         `;
         
@@ -72,7 +73,7 @@ async function loadGame(gameId) {
         const game = games.find(g => g.id === gameId);
 
         if (game) {
-            document.title = `${game.title} - Unblocked Games Resources`;
+            document.title = `${game.title} - DocuWatch`;
             document.getElementById('game-title').textContent = game.title;
             document.getElementById('game-description').textContent = game.description;
             document.getElementById('game-frame').src = game.url;
@@ -81,6 +82,6 @@ async function loadGame(gameId) {
             document.getElementById('error-message').style.display = 'block';
         }
     } catch (error) {
-        console.error('Error loading game details:', error);
+        console.error('Error loading details:', error);
     }
 }

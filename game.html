@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play Game | Nexus Games</title>
+    <title>View Documentary | DocuWatch</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -17,14 +17,14 @@
         <div class="container header-content">
             <div class="logo">
                 <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
-                    <i class="fa-solid fa-gamepad"></i>
-                    <span>Nexus<span class="highlight">Games</span></span>
+                    <i class="fa-solid fa-film"></i>
+                    <span>Docu<span class="highlight">Watch</span></span>
                 </a>
             </div>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="index.html#new">New</a>
-                <a href="index.html#popular">Popular</a>
+                <a href="index.html#new">New Arrivals</a>
+                <a href="index.html#popular">Trending</a>
             </nav>
         </div>
     </header>
@@ -34,10 +34,10 @@
             <div class="game-header">
                 <div>
                     <h1 id="game-title" style="margin-bottom: 5px;">Loading...</h1>
-                    <p id="game-category" style="color: var(--text-secondary); font-size: 0.9rem;">Arcade</p>
+                    <p id="game-category" style="color: var(--text-secondary); font-size: 0.9rem;">Documentary</p>
                 </div>
                 <button class="fullscreen-btn" onclick="toggleFullscreen()">
-                    <i class="fa-solid fa-expand"></i> Fullscreen
+                    <i class="fa-solid fa-expand"></i> Theater Mode
                 </button>
             </div>
 
@@ -46,22 +46,22 @@
             </div>
 
             <div class="game-info-card" style="background: var(--bg-card); padding: 25px; border-radius: 16px; border: 1px solid var(--glass-border);">
-                <h3 style="margin-bottom: 15px;">Description</h3>
-                <p id="game-description" style="color: var(--text-secondary);">Loading description...</p>
+                <h3 style="margin-bottom: 15px;">Synopsis</h3>
+                <p id="game-description" style="color: var(--text-secondary);">Loading synopsis...</p>
             </div>
         </div>
 
         <div id="error-message" style="display: none; text-align: center; padding: 100px 0;">
-            <i class="fa-solid fa-ghost" style="font-size: 4rem; color: var(--text-secondary); margin-bottom: 20px;"></i>
-            <h2>Game not found</h2>
-            <p style="color: var(--text-secondary); margin-bottom: 20px;">Sorry, the game you are looking for does not exist or has been removed.</p>
-            <a href="index.html" class="play-btn" style="display: inline-block; width: auto; padding: 10px 30px;">Go Back Home</a>
+            <i class="fa-solid fa-file-circle-xmark" style="font-size: 4rem; color: var(--text-secondary); margin-bottom: 20px;"></i>
+            <h2>Documentary not found</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 20px;">Sorry, the content you are looking for does not exist or has been archived.</p>
+            <a href="index.html" class="play-btn" style="display: inline-block; width: auto; padding: 10px 30px;">Return to Archives</a>
         </div>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Nexus Games. Open Source & Unblocked.</p>
+            <p>&copy; 2025 DocuWatch. Educational Purposes Only.</p>
         </div>
     </footer>
 
