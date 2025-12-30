@@ -195,4 +195,3 @@ function initTypingAnimation() {
         setTimeout(type, typeSpeed);
     }
 }
-}
