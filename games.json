@@ -4,153 +4,175 @@
     "title": "Hextris",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Hextris",
     "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/hextris/index.html",
-    "description": "An interactive study of hexagonal spatial reasoning."
+    "description": "Fast-paced puzzle game inspired by Tetris.",
+    "category": "Puzzle"
   },
   {
     "id": "cookie-clicker",
     "title": "Cookie Clicker",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Cookie+Clicker",
     "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/cookieclicker/index.html",
-    "description": "A simulation of exponential growth in a bakery environment."
+    "description": "The original idle game where you bake cookies.",
+    "category": "Clicker"
   },
   {
     "id": "slope",
     "title": "Slope",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Slope",
     "url": "https://radon.games/cdn/unity.html?id=slope",
-    "description": "A study of momentum and gravity on inclined planes."
+    "description": "Speed down a randomized slope in 3D.",
+    "category": "Arcade"
   },
   {
     "id": "1v1-lol",
     "title": "1v1.lol",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=1v1.lol",
     "url": "https://docs-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/ko1ov/to@1e8a949f89fcf2b110640c41a0705db01405d161/d7uf4.xml",
-    "description": "Rapid structural defense and ballistics simulation."
+    "description": "Online third-person shooter and building simulator.",
+    "category": "Action"
   },
   {
     "id": "paper-io-2",
     "title": "Paper.io 2",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Paper.io+2",
     "url": "https://cdn.statically.io/gl/3kh0/3kh0-assets/main/paperio2/index.html",
-    "description": "A study of area capture and boundary defense."
+    "description": "Conquer territory and beat other players.",
+    "category": "Action"
   },
   {
     "id": "subway-surfers",
     "title": "Subway Surfers",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Subway+Surfers",
     "url": "https://cdn.statically.io/gl/3kh0/3kh0-assets/main/subway-surfers/index.html",
-    "description": "High-velocity obstacle avoidance in urban environments."
+    "description": "Endless runner game where you surf the subways.",
+    "category": "Arcade"
   },
   {
     "id": "geometry-dash",
     "title": "Geometry Dash",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Geometry+Dash",
     "url": "https://radon.games/cdn/html.html?id=geometry-dash",
-    "description": "Synchronization of geometric movement with audio patterns."
+    "description": "Rhythm-based platformer game.",
+    "category": "Arcade"
   },
   {
     "id": "agar-io",
     "title": "Agar.io",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Agar.io",
     "url": "https://radon.games/cdn/html.html?id=agario-minigame",
-    "description": "Microscopic cellular growth and consumption simulation."
+    "description": "Eat cells smaller than you and avoid being eaten.",
+    "category": "Action"
   },
   {
     "id": "fnf",
     "title": "Friday Night Funkin'",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=FNF",
     "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/fridaynightfunkin/index.html",
-    "description": "A study of rhythm and timing."
+    "description": "Rhythm game where you battle for a kiss.",
+    "category": "Rhythm"
   },
   {
     "id": "clash",
     "title": "Clash of Clans",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Clash+of+Clans",
     "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/clash-of-clans/index.html",
-    "description": "A simulation of strategic resource management and defense."
+    "description": "Build your village and battle other players.",
+    "category": "Strategy"
   },
   {
     "id": "drift-hunters",
     "title": "Drift Hunters",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Drift+Hunters",
     "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/drift-hunters/index.html",
-    "description": "An interactive demonstration of tire friction and momentum."
+    "description": "Car drifting simulator with customization.",
+    "category": "Racing"
   },
   {
     "id": "rocket-soccer",
     "title": "Rocket Soccer Derby",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Rocket+Soccer",
     "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/rocket-soccer-derby/index.html",
-    "description": "Interactive physics demonstration with rockets."
+    "description": "Futuristic soccer game with rocket cars.",
+    "category": "Sports"
   },
   {
     "id": "slither-io",
     "title": "Slither.io",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Slither.io",
     "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/slitherio/index.html",
-    "description": "A simulation of competitive growth dynamics."
+    "description": "Snake-like game where you grow by eating pellets.",
+    "category": "Action"
   },
   {
     "id": "grand-town",
     "title": "Grand Town Auto",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Grand+Town",
     "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/grand-town-auto/index.html",
-    "description": "An open-world urban environment simulation."
+    "description": "Open world driving and crime game.",
+    "category": "Action"
   },
   {
     "id": "minecraft-classic",
     "title": "Minecraft Classic",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Minecraft",
     "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/minecraft-classic/index.html",
-    "description": "A creative voxel-based architectural tool."
+    "description": "The classic version of the sandbox building game.",
+    "category": "Adventure"
   },
   {
     "id": "snow-rider",
     "title": "Snow Rider 3D",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Snow+Rider",
     "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/snow-rider-3d/index.html",
-    "description": "A 3D simulation of alpine descent physics."
+    "description": "Sleigh riding game in 3D.",
+    "category": "Sports"
   },
   {
     "id": "football-bros",
     "title": "Football Bros",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Football+Bros",
     "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/football-bros/index.html",
-    "description": "A simulation of cooperative team sports dynamics."
+    "description": "American football game.",
+    "category": "Sports"
   },
   {
     "id": "retro-bowl",
     "title": "Retro Bowl",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Retro+Bowl",
     "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/retro-bowl/index.html",
-    "description": "A strategic management simulation."
+    "description": "Retro-style American football management game.",
+    "category": "Sports"
   },
   {
     "id": "basket-random",
     "title": "Basket Random",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Basket+Random",
     "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/basket-random/index.html",
-    "description": "A study of random physics interactions."
+    "description": "Two-player basketball game with ragdoll physics.",
+    "category": "Sports"
   },
   {
     "id": "gunspin",
     "title": "Gunspin",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Gunspin",
     "url": "https://cdn.jsdelivr.net/gh/3kh0/3kh0-assets@main/gunspin/index.html",
-    "description": "An interactive demonstration of recoil mechanics."
+    "description": "Use gun recoil to travel as far as possible.",
+    "category": "Action"
   },
   {
     "id": "2048",
     "title": "2048",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=2048",
     "url": "games/2048/index.html",
-    "description": "Join the numbers and get to the 2048 tile!"
+    "description": "Join the numbers and get to the 2048 tile!",
+    "category": "Puzzle"
   },
   {
     "id": "asteroids",
     "title": "Asteroids",
     "image": "https://placehold.co/300x200/1e293b/3b82f6?text=Asteroids",
     "url": "games/asteroids/index.html",
-    "description": "Classic space shooter game."
+    "description": "Classic space shooter game.",
+    "category": "Arcade"
   }
 ]
