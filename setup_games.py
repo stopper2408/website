@@ -93,7 +93,7 @@ def get_game_metadata(game_dir):
 
     if found_image_path:
         # Normalize path separators to forward slashes for URL
-        image = f"games/{os.path.basename(game_dir)}/{found_image_path}".replace("\\", "/")
+        image = f"archives/{os.path.basename(game_dir)}/{found_image_path}".replace("\\", "/")
 
     if os.path.exists(index_path):
         try:
@@ -117,7 +117,7 @@ def get_game_metadata(game_dir):
                         img_url = img_match.group(1).strip()
                         if not img_url.startswith("http"):
                              # It's a relative path, construct it
-                             image = f"games/{os.path.basename(game_dir)}/{img_url}".replace("\\", "/")
+                             image = f"archives/{os.path.basename(game_dir)}/{img_url}".replace("\\", "/")
                         else:
                              image = img_url
         except Exception:
@@ -164,7 +164,7 @@ def download_repo_as_game(repo_url, game_id, target_dir, branch="main"):
                 "id": game_id,
                 "title": title,
                 "image": image,
-                "url": f"games/{game_id}/index.html",
+                "url": f"archives/{game_id}/index.html",
                 "description": description,
                 "category": category
             }
@@ -254,7 +254,7 @@ def setup_games(source_dir, target_dir):
                     "id": game_name,
                     "title": title,
                     "image": image,
-                    "url": f"games/{game_name}/index.html",
+                    "url": f"archives/{game_name}/index.html",
                     "description": description,
                     "category": category
                 })
@@ -275,7 +275,7 @@ def setup_games(source_dir, target_dir):
 
 def main():
     base_dir = os.getcwd()
-    games_dir = os.path.join(base_dir, "games")
+    games_dir = os.path.join(base_dir, "archives")
     
     try:
         repo_path = download_and_extract_repo()
@@ -285,9 +285,13 @@ def main():
         # Save games.json
         with open("games.json", "w") as f:
             json.dump(games_data, f, indent=2)
+
+        # Save games_data.js
+        with open("games_data.js", "w", encoding="utf-8") as f:
+            f.write("window.GAMES_DATA = " + json.dumps(games_data, indent=4) + ";\n")
             
         print(f"Successfully processed {len(games_data)} games.")
-        print("Updated games.json")
+        print("Updated games.json and games_data.js")
         
     except Exception as e:
         print(f"Error: {e}")
