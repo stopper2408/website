@@ -37,8 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function fetchGames() {
     try {
-        const response = await fetch('games.json');
-        allGames = await response.json();
+        if (typeof window.GAMES_DATA !== 'undefined') {
+            allGames = window.GAMES_DATA;
+        } else {
+            const response = await fetch('games.json');
+            allGames = await response.json();
+        }
         
         // Sort by popularity (descending), then title (ascending)
         allGames.sort((a, b) => {
@@ -135,8 +139,14 @@ function toggleFavorite(gameId, btn) {
 
 async function loadGame(gameId) {
     try {
-        const response = await fetch('games.json');
-        const games = await response.json();
+        let games = [];
+        if (typeof window.GAMES_DATA !== 'undefined') {
+            games = window.GAMES_DATA;
+        } else {
+            const response = await fetch('games.json');
+            games = await response.json();
+        }
+
         const game = games.find(g => g.id === gameId);
 
         if (game) {
