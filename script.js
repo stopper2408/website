@@ -40,7 +40,18 @@ async function fetchGames() {
         if (typeof window.GAMES_DATA !== 'undefined') {
             allGames = window.GAMES_DATA;
         } else {
-            const response = await fetch('games.json');
+            const response = await fetch('content.json');
+            
+            if (!response.ok) {
+                throw new Error(`Status ${response.status}`);
+            }
+            
+            // Verify we got JSON back, not an HTML error page
+            const contentType = response.headers.get('content-type');
+            if (!contentType || !contentType.includes('application/json')) {
+                throw new Error('Received non-JSON response (likely firewall block)');
+            }
+
             allGames = await response.json();
         }
         
@@ -59,7 +70,14 @@ async function fetchGames() {
         console.error('Error fetching content:', error);
         const gamesGrid = document.getElementById('games-grid');
         if (gamesGrid) {
-            gamesGrid.innerHTML = '<p>Error loading archives. Please try again later.</p>';
+            gamesGrid.innerHTML = `
+                <div class="error-message" style="text-align: center; padding: 2rem;">
+                    <i class="fa-solid fa-ban" style="font-size: 3rem; margin-bottom: 1rem; color: #ef4444;"></i>
+                    <h3>Content Blocked</h3>
+                    <p>Unable to load content data. This is likely due to a network restriction.</p>
+                    <small style="opacity: 0.7;">Error: ${error.message}</small>
+                </div>
+            `;
         }
     }
 }
