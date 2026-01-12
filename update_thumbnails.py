@@ -4,7 +4,7 @@ import requests
 import urllib.parse
 
 # Configuration
-GAMES_JSON_PATH = 'content.json'
+GAMES_JSON_PATH = 'metadata.json'
 THUMBNAILS_DIR = 'thumbnails'
 BG_COLOR = '1e293b' # Dark blue/slate from the screenshot
 TEXT_COLOR = 'ffffff'

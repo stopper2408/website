@@ -5,7 +5,7 @@ import sys
 
 def add_game_logo():
     # Configuration
-    GAMES_JSON_PATH = 'content.json'
+    GAMES_JSON_PATH = 'metadata.json'
     THUMBNAILS_DIR = 'thumbnails'
 
     # Ensure thumbnails directory exists

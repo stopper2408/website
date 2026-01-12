@@ -282,16 +282,12 @@ def main():
         
         games_data = setup_games(repo_path, games_dir)
         
-        # Save content.json
-        with open("content.json", "w") as f:
+        # Save metadata.json
+        with open("metadata.json", "w") as f:
             json.dump(games_data, f, indent=2)
 
-        # Save content_data.js
-        with open("content_data.js", "w", encoding="utf-8") as f:
-            f.write("window.GAMES_DATA = " + json.dumps(games_data, indent=4) + ";\n")
-            
         print(f"Successfully processed {len(games_data)} games.")
-        print("Updated content.json and content_data.js")
+        print("Updated metadata.json")
         
     except Exception as e:
         print(f"Error: {e}")

@@ -53,9 +53,9 @@ def download_image(game_id, url):
         return None
 
 def update_games_json(downloaded_map):
-    json_path = "content.json"
+    json_path = "metadata.json"
     if not os.path.exists(json_path):
-        print("content.json not found!")
+        print("metadata.json not found!")
         return
 
     with open(json_path, 'r') as f:
@@ -71,7 +71,7 @@ def update_games_json(downloaded_map):
     with open(json_path, 'w') as f:
         json.dump(games, f, indent=4)
     
-    print(f"Updated {updated_count} games in content.json")
+    print(f"Updated {updated_count} games in metadata.json")
 
 def main():
     downloaded_files = {}
