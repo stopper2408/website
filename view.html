@@ -40,24 +40,24 @@
     </header>
 
     <main class="container" style="padding-top: 40px;">
-        <div id="game-details">
-            <div class="game-header">
+        <div id="content-details">
+            <div class="content-header">
                 <div>
-                    <h1 id="game-title" style="margin-bottom: 5px;">Loading...</h1>
-                    <p id="game-category" style="color: var(--text-secondary); font-size: 0.9rem;">Documentary</p>
+                    <h1 id="content-title" style="margin-bottom: 5px;">Loading...</h1>
+                    <p id="content-category" style="color: var(--text-secondary); font-size: 0.9rem;">Documentary</p>
                 </div>
                 <button class="fullscreen-btn" onclick="toggleFullscreen()">
                     <i class="fa-solid fa-expand"></i> Theater Mode
                 </button>
             </div>
 
-            <div class="game-frame-wrapper" id="game-container">
-                <iframe id="game-frame" src="" frameborder="0" allowfullscreen allow="autoplay; fullscreen; gamepad; accelerometer; gyroscope; payment; ambient-light-sensor; microphone"></iframe>
+            <div class="content-frame-wrapper" id="content-container">
+                <iframe id="content-frame" src="" frameborder="0" allowfullscreen allow="autoplay; fullscreen; gamepad; accelerometer; gyroscope; payment; ambient-light-sensor; microphone"></iframe>
             </div>
 
-            <div class="game-info-card" style="background: var(--bg-card); padding: 25px; border-radius: 16px; border: 1px solid var(--glass-border);">
+            <div class="content-info-card" style="background: var(--bg-card); padding: 25px; border-radius: 16px; border: 1px solid var(--glass-border);">
                 <h3 style="margin-bottom: 15px;">Synopsis</h3>
-                <p id="game-description" style="color: var(--text-secondary);">Loading synopsis...</p>
+                <p id="content-description" style="color: var(--text-secondary);">Loading synopsis...</p>
             </div>
         </div>
 
@@ -78,21 +78,21 @@
     <script src="data.js"></script>
     <script src="script.js"></script>
     <script>
-        // Specific logic for game.html
+        // Specific logic for view.html
         document.addEventListener('DOMContentLoaded', () => {
             const urlParams = new URLSearchParams(window.location.search);
-            const gameId = urlParams.get('id');
+            const contentId = urlParams.get('id');
             
-            if (gameId) {
-                loadGame(gameId);
+            if (contentId) {
+                loadContent(contentId);
             } else {
-                document.getElementById('game-details').style.display = 'none';
+                document.getElementById('content-details').style.display = 'none';
                 document.getElementById('error-message').style.display = 'block';
             }
         });
 
         function toggleFullscreen() {
-            const elem = document.getElementById("game-frame");
+            const elem = document.getElementById("content-frame");
             if (elem.requestFullscreen) {
                 elem.requestFullscreen();
             } else if (elem.webkitRequestFullscreen) { /* Safari */

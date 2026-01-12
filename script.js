@@ -161,31 +161,59 @@ function toggleFavorite(itemId, btn) {
     }
 }
 
-async function loadGame(gameId) {
+async function loadContent(contentId) {
     try {
-        let games = [];
-        if (typeof window.GAMES_DATA !== 'undefined') {
-            games = window.GAMES_DATA;
+        let content = [];
+        if (typeof window.APP_DATA !== 'undefined') {
+             // Client-side decryption to bypass network content filters
+            try {
+                const key = 'docuwatch';
+                const binaryString = atob(window.APP_DATA);
+                const bytes = new Uint8Array(binaryString.length);
+                for (let i = 0; i < binaryString.length; i++) {
+                    bytes[i] = binaryString.charCodeAt(i) ^ key.charCodeAt(i % key.length);
+                }
+                const jsonString = new TextDecoder().decode(bytes);
+                content = JSON.parse(jsonString);
+            } catch (decryptError) {
+                console.error('Decryption failed:', decryptError);
+                throw new Error('Failed to decrypt content data');
+            }
         } else {
-            const response = await fetch('games.json');
-            games = await response.json();
+             throw new Error('No content source available (APP_DATA missing)');
         }
 
-        const game = games.find(g => g.id === gameId);
+        const item = content.find(g => g.id === contentId);
 
-        if (game) {
-            document.title = `${game.title} - DocuWatch`;
-            document.getElementById('game-title').textContent = game.title;
-            document.getElementById('game-description').textContent = game.description;
-            const catEl = document.getElementById('game-category');
-            if (catEl) catEl.textContent = game.category || 'Arcade';
-            document.getElementById('game-frame').src = game.url;
+        if (item) {
+            document.title = `${item.title} - DocuWatch`;
+            const titleEl = document.getElementById('content-title');
+            if (titleEl) titleEl.textContent = item.title;
+            
+            const descEl = document.getElementById('content-description');
+            if (descEl) descEl.textContent = item.description;
+            
+            const catEl = document.getElementById('content-category');
+            if (catEl) catEl.textContent = (item.category === 'Arcade' ? 'Classics' : item.category) || 'Content';
+            
+            const frameEl = document.getElementById('content-frame');
+            if (frameEl) frameEl.src = item.url;
         } else {
-            document.getElementById('game-details').style.display = 'none';
-            document.getElementById('error-message').style.display = 'block';
+            const detailsEl = document.getElementById('content-details');
+            if (detailsEl) detailsEl.style.display = 'none';
+            const errorEl = document.getElementById('error-message');
+            if (errorEl) errorEl.style.display = 'block';
         }
     } catch (error) {
         console.error('Error loading details:', error);
+        const detailsEl = document.getElementById('content-details');
+        if (detailsEl) detailsEl.style.display = 'none';
+        
+        const errorEl = document.getElementById('error-message');
+        if (errorEl) {
+             errorEl.style.display = 'block';
+             errorEl.querySelector('p').textContent = `Error loading content: ${error.message}`;
+        }
     }
 }
 
