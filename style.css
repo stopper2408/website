@@ -294,8 +294,8 @@ nav a:hover, nav a.active {
     color: var(--fav-color);
 }
 
-/* Game Page Specifics */
-.game-frame-wrapper {
+/* Content Page Specifics */
+.content-frame-wrapper {
     background: #000;
     border-radius: 16px;
     overflow: hidden;
@@ -305,7 +305,7 @@ nav a:hover, nav a.active {
     padding-bottom: 56.25%; /* 16:9 */
 }
 
-.game-frame-wrapper iframe {
+.content-frame-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -314,7 +314,7 @@ nav a:hover, nav a.active {
     border: none;
 }
 
-.game-header {
+.content-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
