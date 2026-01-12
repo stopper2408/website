@@ -1,19 +1,19 @@
-let allGames = [];
+let allContent = [];
 let favorites = JSON.parse(localStorage.getItem('docuwatch_favorites')) || [];
 
 document.addEventListener('DOMContentLoaded', () => {
-    const gamesGrid = document.getElementById('games-grid');
+    const contentGrid = document.getElementById('content-grid');
     const searchInput = document.getElementById('search-input');
     const categoryPills = document.querySelectorAll('.category-pill');
 
     initTypingAnimation();
 
-    if (gamesGrid) {
-        fetchGames();
+    if (contentGrid) {
+        fetchContent();
         
         if (searchInput) {
             searchInput.addEventListener('input', (e) => {
-                filterGames(e.target.value);
+                filterContent(e.target.value);
             });
         }
 
@@ -28,14 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (category === 'favorites') {
                     showFavorites();
                 } else {
-                    filterGames(searchInput ? searchInput.value : '', category);
+                    filterContent(searchInput ? searchInput.value : '', category);
                 }
             });
         });
     }
 });
 
-async function fetchGames() {
+async function fetchContent() {
     try {
         if (typeof window.APP_DATA !== 'undefined') {
             // Client-side decryption to bypass network content filters
@@ -47,19 +47,17 @@ async function fetchGames() {
                     bytes[i] = binaryString.charCodeAt(i) ^ key.charCodeAt(i % key.length);
                 }
                 const jsonString = new TextDecoder().decode(bytes);
-                allGames = JSON.parse(jsonString);
+                allContent = JSON.parse(jsonString);
             } catch (decryptError) {
                 console.error('Decryption failed:', decryptError);
                 throw new Error('Failed to decrypt content data');
             }
-        } else if (typeof window.GAMES_DATA !== 'undefined') {
-            allGames = window.GAMES_DATA;
         } else {
             throw new Error('No content source available (APP_DATA missing)');
         }
         
         // Sort by popularity (descending), then title (ascending)
-        allGames.sort((a, b) => {
+        allContent.sort((a, b) => {
             const popA = a.popularity || 0;
             const popB = b.popularity || 0;
             if (popA !== popB) {
@@ -68,12 +66,12 @@ async function fetchGames() {
             return a.title.localeCompare(b.title);
         });
 
-        renderGames(allGames);
+        renderContent(allContent);
     } catch (error) {
         console.error('Error fetching content:', error);
-        const gamesGrid = document.getElementById('games-grid');
-        if (gamesGrid) {
-            gamesGrid.innerHTML = `
+        const contentGrid = document.getElementById('content-grid');
+        if (contentGrid) {
+            contentGrid.innerHTML = `
                 <div class="error-message" style="text-align: center; padding: 2rem;">
                     <i class="fa-solid fa-ban" style="font-size: 3rem; margin-bottom: 1rem; color: #ef4444;"></i>
                     <h3>Content Blocked</h3>
@@ -85,68 +83,73 @@ async function fetchGames() {
     }
 }
 
-function renderGames(games) {
-    const gamesGrid = document.getElementById('games-grid');
-    gamesGrid.innerHTML = '';
+function renderContent(items) {
+    const contentGrid = document.getElementById('content-grid');
+    contentGrid.innerHTML = '';
 
-    if (games.length === 0) {
-        gamesGrid.innerHTML = '<p>No content found matching your criteria.</p>';
+    if (items.length === 0) {
+        contentGrid.innerHTML = '<p>No content found matching your criteria.</p>';
         return;
     }
 
-    games.forEach(game => {
-        const isFav = favorites.includes(game.id);
+    items.forEach(item => {
+        const isFav = favorites.includes(item.id);
         const card = document.createElement('div');
-        card.className = 'game-card';
+        card.className = 'content-card';
+        
+        // Use 'Classics' instead of 'Arcade' for filter evasion
+        if (item.category === 'Arcade') item.category = 'Classics';
         
         card.innerHTML = `
-            <a href="game.html?id=${game.id}" style="text-decoration: none; color: inherit; display: block;">
-                <img src="${game.image}" alt="${game.title}" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/300x200/1e293b/3b82f6?text=${encodeURIComponent(game.title)}'">
-                <div class="game-info">
-                    <h3>${game.title}</h3>
-                    <p>${game.description}</p>
+            <a href="view.html?id=${item.id}" style="text-decoration: none; color: inherit; display: block;">
+                <img src="${item.image}" alt="${item.title}" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/300x200/1e293b/3b82f6?text=${encodeURIComponent(item.title)}'">
+                <div class="content-info">
+                    <h3>${item.title}</h3>
+                    <p>${item.description}</p>
                 </div>
             </a>
             <div class="card-actions">
-                <a href="game.html?id=${game.id}" class="play-btn">Watch Now</a>
-                <button class="fav-btn ${isFav ? 'active' : ''}" onclick="toggleFavorite('${game.id}', this)">
+                <a href="view.html?id=${item.id}" class="play-btn">Watch Now</a>
+                <button class="fav-btn ${isFav ? 'active' : ''}" onclick="toggleFavorite('${item.id}', this)">
                     <i class="fa-${isFav ? 'solid' : 'regular'} fa-heart"></i>
                 </button>
             </div>
         `;
         
-        gamesGrid.appendChild(card);
+        contentGrid.appendChild(card);
     });
 }
 
-function filterGames(searchTerm, category = 'all') {
+function filterContent(searchTerm, category = 'all') {
     const term = searchTerm.toLowerCase();
-    let filtered = allGames.filter(game => 
-        (game.title.toLowerCase().includes(term) || 
-        game.description.toLowerCase().includes(term))
+    let filtered = allContent.filter(item => 
+        (item.title.toLowerCase().includes(term) || 
+        item.description.toLowerCase().includes(term))
     );
 
     if (category !== 'all') {
-        filtered = filtered.filter(game => 
-            game.category && game.category.toLowerCase() === category.toLowerCase()
-        );
+        filtered = filtered.filter(item => {
+             // Remap Arcade to Classics for filtering
+             const itemCat = item.category === 'Arcade' ? 'Classics' : item.category;
+             return itemCat && itemCat.toLowerCase() === category.toLowerCase();
+        });
     }
     
-    renderGames(filtered);
+    renderContent(filtered);
 }
 
 function showFavorites() {
-    const favGames = allGames.filter(game => favorites.includes(game.id));
-    renderGames(favGames);
+    const favItems = allContent.filter(item => favorites.includes(item.id));
+    renderContent(favItems);
 }
 
-function toggleFavorite(gameId, btn) {
-    if (favorites.includes(gameId)) {
-        favorites = favorites.filter(id => id !== gameId);
+function toggleFavorite(itemId, btn) {
+    if (favorites.includes(itemId)) {
+        favorites = favorites.filter(id => id !== itemId);
         btn.classList.remove('active');
         btn.querySelector('i').classList.replace('fa-solid', 'fa-regular');
     } else {
-        favorites.push(gameId);
+        favorites.push(itemId);
         btn.classList.add('active');
         btn.querySelector('i').classList.replace('fa-regular', 'fa-solid');
     }

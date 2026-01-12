@@ -18,6 +18,8 @@ def encrypt_content():
     # Fix paths: games/ -> archives/
     # This avoids "games" keyword in URLs and matches the actual folder structure
     content = content.replace('"url": "games/', '"url": "archives/')
+    # Also fix the game.html links if they exist in the content (though they shouldn't usually)
+    content = content.replace('game.html', 'view.html')
 
     # Convert to bytes
     content_bytes = content.encode('utf-8')
