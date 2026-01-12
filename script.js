@@ -37,22 +37,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function fetchGames() {
     try {
-        if (typeof window.GAMES_DATA !== 'undefined') {
+        if (typeof window.APP_DATA !== 'undefined') {
+            // Client-side decryption to bypass network content filters
+            try {
+                const key = 'docuwatch';
+                const binaryString = atob(window.APP_DATA);
+                const bytes = new Uint8Array(binaryString.length);
+                for (let i = 0; i < binaryString.length; i++) {
+                    bytes[i] = binaryString.charCodeAt(i) ^ key.charCodeAt(i % key.length);
+                }
+                const jsonString = new TextDecoder().decode(bytes);
+                allGames = JSON.parse(jsonString);
+            } catch (decryptError) {
+                console.error('Decryption failed:', decryptError);
+                throw new Error('Failed to decrypt content data');
+            }
+        } else if (typeof window.GAMES_DATA !== 'undefined') {
             allGames = window.GAMES_DATA;
         } else {
-            const response = await fetch('content.json');
-            
-            if (!response.ok) {
-                throw new Error(`Status ${response.status}`);
-            }
-            
-            // Verify we got JSON back, not an HTML error page
-            const contentType = response.headers.get('content-type');
-            if (!contentType || !contentType.includes('application/json')) {
-                throw new Error('Received non-JSON response (likely firewall block)');
-            }
-
-            allGames = await response.json();
+            throw new Error('No content source available (APP_DATA missing)');
         }
         
         // Sort by popularity (descending), then title (ascending)

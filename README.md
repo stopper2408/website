@@ -6,15 +6,16 @@ This is a static website clone of the Unblocked Games Resources site. It is desi
 
 - `index.html`: The main landing page listing all games.
 - `game.html`: The player page that loads a specific game.
-- `content.json`: A JSON database containing the list of games, their titles, descriptions, images, and embed URLs.
+- `metadata.json`: A JSON database containing the list of games (source file).
+- `data.js`: The encrypted game data loaded by the browser.
 - `style.css`: The styling for the website.
-- `script.js`: The logic to fetch games from the JSON file and render them.
+- `script.js`: The logic to fetch games from the encrypted content and render them.
 
 ## How to Add Games
 
-To add more games or update existing ones, you only need to edit the `content.json` file.
+To add more games or update existing ones, you only need to edit the `metadata.json` file and run encryption.
 
-1.  Open `content.json`.
+1.  Open `metadata.json`.
 2.  Add a new object to the array in the following format:
 
 ```json
@@ -27,7 +28,9 @@ To add more games or update existing ones, you only need to edit the `content.js
 }
 ```
 
-**Important:** The current `content.json` contains placeholder URLs (`https://example.com/...`) and placeholder images. You will need to find the actual embed URLs for the games you want to host. You can often find these by inspecting the source of other game sites or looking for "Embed" buttons on game distribution platforms.
+3.  Run `python encrypt_content.py` to regenerate `data.js`.
+
+**Important:** `metadata.json` is the source of truth, but `data.js` is what the website actually loads. Never deploy `metadata.json` to production if you want to avoid filters.
 
 ## How to Host on GitHub Pages
 
