@@ -18,10 +18,10 @@
         "popularity": 95
     },
     {
-        "id": "minecraft",
+        "id": "block-world",
         "title": "Minecraft (Clone)",
-        "image": "thumbnails/minecraft.png",
-        "url": "games/minecraft/index.html",
+        "image": "thumbnails/block-world.png",
+        "url": "games/block-world/index.html",
         "description": "Play Minecraft (Clone) now!",
         "category": "Arcade",
         "popularity": 90
